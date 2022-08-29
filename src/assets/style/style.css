@@ -1,0 +1,308 @@
+/* FONTS API KEY AIzaSyDrDAiFV61GV2BbcMHrZtAyJOvcq2Adzwo */
+
+:root {
+    --purple: #957bf1;
+    --purple-highlighted: #af99ff; 
+    --purple-lighter: #dabfff;
+    --purple-dark: #4f518c;
+    --purple-darkest: #26243d;
+    --blue: #7fdeff;
+    --blue-highlighted: #b4dfee;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Alumni Sans Pinstripe';
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: var(--purple-dark);
+    max-height: 100vh;
+    overflow: hidden;
+}
+#stars1 {
+    bottom: 175px;
+}
+.object {
+    position: absolute;
+    image-rendering: pixelated;
+    width: 100vw;
+}
+.navbar {
+    display: flex;
+    background-color: transparent !important;
+    box-shadow: none;
+    height: 100px;
+    margin-bottom: 10px;
+    justify-items: center;
+}
+.collapse {
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+}
+.navbar-brand {
+    position: absolute;
+    margin: 25px auto;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 195px;
+    border-radius: 3px;
+    outline: 3px solid var(--purple);
+    height: 65px;
+    z-index: 0;
+    transition: width 0.3s ease-in-out,
+    height 0.3s ease-in-out,
+    left 0.3s ease-in-out,
+    outline-color 0.6s;
+    z-index: 5;
+}
+.navbar-brand::before {
+    content: "";
+    width: 207px;
+    height: 12px;
+    left: 1px;
+    bottom: -59px;
+    background-color: var(--purple-dark);
+    position: relative;
+    z-index: 2;
+    transition: width 0.4s 0.1s;
+}
+.navbar-brand:hover::before {
+    width: 0px;
+    transition: width 0.001s;
+}
+.navbar-brand:hover {
+    outline-color: var(--purple-highlighted);
+    transition: outline-color 0.4s;
+}
+.navbar-brand::after {
+    content: "";
+    filter: drop-shadow(0px 0px 3px var(--blue));
+    width: 0px;
+    border-radius: 3px;
+    height: 1px;
+    left: 1px;
+    bottom: -39px;
+    background-color: var(--blue);
+    position: relative;
+    z-index: 1;
+    transition: width 0.1s 0.5s;
+}
+.navbar-brand:hover::after {
+    width: 197px;
+    transition: width 0.3s 0.1s;
+}
+.navbar-brand:hover h1 {
+    text-shadow: 0px 0px 5px var(--blue);
+    transition: text-shadow 0.1s;
+}
+.navbar-brand:hover h2 {
+    margin-left: -45px;
+    color: var(--purple-highlighted);
+    transition: margin-left 0.5s cubic-bezier(.36,.83,.11,.98) 0.05s,
+    margin-top 0.2s ease-in-out,
+    color 0.5s;
+}
+
+.navbar-brand h1 {
+    position: relative;
+    color: var(--blue);
+    /* text-shadow: 0px 0px 3px var(--purple-darkest); */
+    font-weight: 100;
+    font-size: 2.5em;
+    padding: 0px 12px 5px 17px;
+    letter-spacing: .5rem;
+    line-height: 0;
+    bottom: 0px;
+    z-index: 2;
+    transition: font-size 0.3s,
+    letter-spacing 0.3s,
+    text-shadow 0.5s;
+}
+
+.navbar-brand h2 {
+    position: absolute;
+    text-align: center;
+    color: var(--purple);
+    padding: 2px 2px 2px 6px;
+    letter-spacing: .3em;
+    font-size: .8em;
+    text-indent: 0px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    line-height: 1;
+    margin-top: 75px;
+    margin-left: 105px;
+    background-color: var(--purple-dark);
+    z-index: 1;
+    transition: margin-left 0.6s ease-in-out 0.12s,
+    margin-top 0.3s,
+    color 0.6s;
+}
+.navbar-toggler {
+    position: absolute;
+    right: 10px;
+}
+.nav-link-current {
+    margin: 10px;
+    font-size: 1.1em;
+    pointer-events: none;
+    color: var(--purple-darkest) !important; 
+    z-index: 5; 
+}
+.nav-link {
+    margin: 10px;
+    font-size: 1.1em;
+    color: var(--blue) !important; 
+    transition: text-shadow 0.3s,
+    color 0.3s;
+    z-index: 5;
+}
+.nav-link:hover {
+    text-shadow: 0px 0px 3px var(--blue);
+    color: var(--blue-highlighted) !important;
+    transition: text-shadow 0.2s,
+    color 0.2s;
+}
+#home::after {
+    content: "";
+    filter: drop-shadow(0px 0px 2px var(--blue));
+    width: 0px !important;
+    border-radius: 3px;
+    height: 1px;
+    left: 19px;
+    top: 46px;
+    background-color: var(--blue);
+    position: absolute;
+    z-index: 1;
+    transition: width 0.1s 0.5s;
+}
+#home:hover::after {
+    width: 52px !important;
+    background-color: var(--blue-highlighted);
+    transition: width 0.25s 0.05s;
+}
+#home::before {
+    content: "";
+    width: 56px !important;
+    height: 11px;
+    left: 17px;
+    top: 42px;
+    background-color: var(--purple-dark);
+    position: absolute;
+    z-index: 2;
+    transition: width 0.4s 0.1s;
+}
+#home:hover::before {
+    width: 0px !important;
+    transition: width 0.001s;
+}
+#about::after {
+    content: "";
+    filter: drop-shadow(0px 0px 2px var(--blue));
+    width: 0px !important;
+    border-radius: 3px;
+    height: 1px;
+    left: 107px;
+    top: 46px;
+    background-color: var(--blue);
+    position: absolute;
+    z-index: 1;
+    transition: width 0.1s 0.5s;
+}
+#about:hover::after {
+    width: 54px !important;
+    background-color: var(--blue-highlighted);
+    transition: width 0.25s 0.05s;
+}
+#about::before {
+    content: "";
+    width: 59px !important;
+    height: 11px;
+    left: 105px;
+    top: 42px;
+    background-color: var(--purple-dark);
+    position: absolute;
+    z-index: 2;
+    transition: width 0.4s 0.1s;
+}
+#about:hover::before {
+    width: 0px !important;
+    transition: width 0.001s;
+}
+#portfolio::after {
+    content: "";
+    filter: drop-shadow(0px 0px 2px var(--blue));
+    width: 0px !important;
+    border-radius: 3px;
+    height: 1px;
+    left: 196px;
+    top: 46px;
+    background-color: var(--blue);
+    position: absolute;
+    z-index: 1;
+    transition: width 0.2s 0.5s;
+}
+#portfolio:hover::after {
+    width: 71px !important;
+    background-color: var(--blue-highlighted);
+    transition: width 0.3s 0.05s;
+}
+#portfolio::before {
+    content: "";
+    width: 76px !important;
+    height: 11px;
+    left: 194px;
+    top: 42px;
+    background-color: var(--purple-dark);
+    position: absolute;
+    z-index: 2;
+    transition: width 0.5s 0.1s;
+}
+#portfolio:hover::before {
+    width: 0px !important;
+    transition: width 0.001s;
+}
+#contact::after {
+    content: "";
+    filter: drop-shadow(0px 0px 2px var(--blue));
+    width: 0px !important;
+    border-radius: 3px;
+    height: 1px;
+    left: 304px;
+    top: 46px;
+    background-color: var(--blue);
+    position: absolute;
+    z-index: 1;
+    transition: width 0.2s 0.5s;
+}
+#contact:hover::after {
+    width: 71px !important;
+    background-color: var(--blue-highlighted);
+    transition: width 0.3s 0.05s;
+}
+#contact::before {
+    content: "";
+    width: 76px !important;
+    height: 11px;
+    left: 302px;
+    top: 42px;
+    background-color: var(--purple-dark);
+    position: absolute;
+    z-index: 2;
+    transition: width 0.4s 0.1s;
+}
+#contact:hover::before {
+    width: 0px !important;
+    transition: width 0.001s;
+}
+
+main {
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #7fdfffc7 100%);
+    
+}
