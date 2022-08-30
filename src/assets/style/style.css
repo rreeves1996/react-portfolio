@@ -13,7 +13,10 @@
 h1, h2, h3, h4 {
     font-family: 'Alumni Sans Pinstripe';
 }
-
+a {
+    text-decoration: none;
+    color: var(--blue) !important;
+}
 body {
     font-family: 'Poppins';
     background-color: var(--purple-dark);
@@ -22,18 +25,30 @@ body {
 }
 #stars1 {
     bottom: 175px;
+    
+    animation: scrollRight1 40s;
+    animation-iteration-count: infinite;
+}
+#stars2 {
+    animation: scrollRight2 40s;
+    animation-iteration-count: infinite;
+}
+#stars3 {
+    animation: scrollRight3 40s;
+    animation-iteration-count: infinite;
 }
 .object {
     position: absolute;
     image-rendering: pixelated;
     width: 100vw;
+
 }
 .navbar {
     display: flex;
     background-color: transparent !important;
     box-shadow: none;
     height: 100px;
-    margin-bottom: 10px;
+    margin-bottom: 23px;
     justify-items: center;
 }
 .collapse {
@@ -148,16 +163,17 @@ body {
     right: 10px;
 }
 .nav-link-current {
-    margin: 10px;
-    font-size: 1.1em;
     pointer-events: none;
-    color: var(--purple-darkest) !important; 
-    z-index: 5; 
+    opacity: 45%;
+    color: var(--purple-darkest) !important;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.404);
 }
 .nav-link {
     margin: 10px;
     font-size: 1.1em;
-    color: var(--blue) !important; 
+    color: var(--blue); 
     transition: text-shadow 0.3s,
     color 0.3s;
     z-index: 5;
@@ -305,4 +321,140 @@ main {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #7fdfffc7 100%);
     
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 90%;
+    height: 70px;
+    background: rgb(79,81,140);
+    background: radial-gradient(circle, rgb(77, 78, 128) 0%, rgba(53,54,107,1) 100%);
+}
+footer code {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    opacity: 90%;
+
+}
+footer p {
+    color: white;
+    opacity: 70%;
+    font-size: .8em;
+}
+@-webkit-keyframes scrollRight1 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -100px;
+    }
+}
+@-moz-keyframes scrollRight1 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -100px;
+    }
+}
+@-o-keyframes scrollRight1 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -100px;
+    }
+}
+@keyframes scrollRight1 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -50px;
+    }
+}
+@-webkit-keyframes scrollRight2 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -200px;
+    }
+}
+@-moz-keyframes scrollRight2 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -200px;
+    }
+}
+@-o-keyframes scrollRight2 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -200px;
+    }
+}
+@keyframes scrollRight2 {
+    0% {
+        left: 0;
+    }
+    
+    50% {
+        left: -90px;
+    }
+    100% {
+        left: 0;
+    }
+}
+@-webkit-keyframes scrollRight3 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -300px;
+    }
+}
+@-moz-keyframes scrollRight3 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -300px;
+    }
+}
+@-o-keyframes scrollRight3 {
+    0% {
+        right: 0;
+    }
+    
+    100% {
+        right: -300px;
+    }
+}
+@keyframes scrollRight3 {
+    0% {
+        right: 0;
+    }
+    
+    50% {
+        right: -150px;
+    }
+    100% {
+        right: 0;
+    }
 }
