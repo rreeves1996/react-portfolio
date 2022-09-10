@@ -3,6 +3,7 @@ import stars1 from '../assets/stars1.png';
 import stars2 from '../assets/stars2.png';
 import stars3 from '../assets/stars3.png';
 
+
 function Navbar({ currentPage, handlePageChange }) {
     return (
         <>
@@ -11,10 +12,11 @@ function Navbar({ currentPage, handlePageChange }) {
             <img src={stars3} alt="stars3" id="stars3" className="object" data-value="2" />
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
-                    <a href="#home" className="navbar-brand">
-                     <h1>rreeves</h1>
-                     <h2>dev</h2>
+                    <a href="#home" className="navbar-brand" onClick={() => handlePageChange("Home")}>
+                        <h1>rreeves</h1>
+                        <h2>dev</h2>
                     </a>
+                    {/* <code>!! WEBSITE STILL UNDER CONSTRUCTION !!</code> */}
                     <button className="navbar-toggler"
                         type="button"
                         data-mdb-toggle="collapse"
