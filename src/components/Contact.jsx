@@ -5,11 +5,8 @@ import city1Image from "../assets/city1.png";
 import city2Image from "../assets/city2.png";
 import homePortrait from "../assets/self.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
-import linkedinHovered from "../assets/linkedin-icon-light.png";
 import githubIcon from "../assets/github-icon.png";
-import githubHovered from "../assets/github-icon-light.png";
 import instagramIcon from "../assets/instagram-icon.png";
-import instagramHovered from "../assets/instagram-icon-light.png";
 
 import '../assets/style/contact.css';
 
@@ -48,34 +45,38 @@ function Contact() {
                                     <p><strong>Email</strong>: rreeves.dev@gmail.com</p>
                                     <p><strong>Location</strong>: Bothell, WA</p>
                                     <p><strong>Timezone</strong>: PDT (GMT - 07:00)</p>
-                                    <div className="contact-button-container" id="button-container-1">
-                                        <div className="contact-social-buttons">
-                                            <div className="contact-light-icon-container">
-                                                <img src={linkedinHovered} alt="linkedin" id="linkedin-icon-light" className="contact-light-icon" />
-                                                <img src={githubHovered} alt="github" id="github-icon-light" className="contact-light-icon" />
-                                                <img src={instagramHovered} alt="instagram" id="instagram-icon" className="contact-light-icon" />
-                                                <img src={instagramHovered} alt="facebook" id="facebook-icon" className="contact-light-icon" />
-                                            </div>
-                                            <div className="contact-base-icon-container">
-                                                <a href="#linkedin">
-                                                    <img src={linkedinIcon} alt="linkedin" id="linkedin-icon" className="contact-base-icon" />
-                                                </a>
-                                                <a href="#github">
-                                                    <img src={githubIcon} alt="github" id="github-icon" className="contact-base-icon" />
-                                                </a>
-                                                <a href="#instagram">
-                                                    <img src={instagramIcon} alt="instagram" id="instagram-icon" className="contact-base-icon" />
-                                                </a>
-                                                <a href="#instagram">
-                                                    <img src={instagramIcon} alt="facebook" id="facebook-icon" className="contact-base-icon" />
-                                                </a>
-                                            </div>
-                                        </div>
+                                    <div className="contact-social-buttons">
+                                        <a href="#linkedin">
+                                            <img src={linkedinIcon} alt="linkedin" id="linkedin-icon" className="contact-base-icon" />
+                                        </a>
+                                        <a href="#github">
+                                            <img src={githubIcon} alt="github" id="github-icon" className="contact-base-icon" />
+                                        </a>
+                                        <a href="#instagram">
+                                            <img src={instagramIcon} alt="instagram" id="instagram-icon" className="contact-base-icon" />
+                                        </a>
+                                        <a href="#instagram">
+                                            <img src={instagramIcon} alt="facebook" id="facebook-icon" className="contact-base-icon" />
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <img class="contact-picture" id="contact-picture" src={homePortrait} />
                                 </div>
+                            </div>
+                            <div className="mobile-social-buttons">
+                                <a href="#linkedin">
+                                    <img src={linkedinIcon} alt="linkedin" id="linkedin-icon" className="mobile-icon" />
+                                </a>
+                                <a href="#github">
+                                    <img src={githubIcon} alt="github" id="github-icon" className="mobile-icon" />
+                                </a>
+                                <a href="#instagram">
+                                    <img src={instagramIcon} alt="instagram" id="instagram-icon" className="mobile-icon" />
+                                </a>
+                                <a href="#instagram">
+                                    <img src={instagramIcon} alt="facebook" id="facebook-icon" className="mobile-icon" />
+                                </a>
                             </div>
                             <p className="resume-text">Click <a href="#">here</a> to view my resume</p>
                         </div>

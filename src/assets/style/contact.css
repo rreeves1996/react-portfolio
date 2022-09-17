@@ -4,6 +4,9 @@
 .mobile-banner-container {
     display: none;
 }
+.mobile-social-buttons {
+    display: none;
+}
 .contact-container {
     display: flex;
     position: relative;
@@ -262,24 +265,7 @@
     bottom: -5%;
     z-index: 5;
 }
-.contact-base-icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 0;
-    left: 0;
-}
-.contact-light-icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 0;
-}
-.contact-base-icon-container a img, .contact-light-icon-container img {
+.contact-social-buttons a img, .mobile-social-buttons a img {
     position: relative;
     margin: 8px;
     width: 48px; 
@@ -287,18 +273,15 @@
     border: 2px solid var(--purple-darkest);
     border-radius: 25px
 }
-.contact-light-icon-container img {
-    border: 2px solid var(--purple-dark);
-}
-.contact-base-icon-container a {
-    opacity: 100%;
-    transition: opacity 0.15s;
-    z-index: 5;
+.contact-social-buttons a, .mobile-social-buttons a {
+    z-index: 0 !important ;
     cursor: pointer;
+    transition: filter 0.1s,
+    transform 0.15s;
 }
-.contact-base-icon-container a:hover {
-    opacity: 0%;
-    transition: opacity 0.15s;
+.contact-social-buttons a:hover, .mobile-social-buttons a:hover {
+    filter: brightness(2);
+    transform: scale(1.05);
 }
 .resume-text {
     position: absolute;
@@ -517,7 +500,7 @@ textarea {
         flex-wrap: wrap;
         width: 60vw;
         top: auto;
-        min-height: 61vh;
+        min-height: 520px;
         bottom: 0vh;
         margin-bottom: 25px;
         /* max-height: 61vh; */
@@ -525,6 +508,7 @@ textarea {
     .contact-right-side::after {
         display: none;
     }
+
     .mobile-banner-container {
         display: flex;
         position: absolute;
@@ -599,6 +583,7 @@ textarea {
         max-width: 250px;
         padding: 27px;
         left: -27%;
+        bottom: 0;
     }
     .left-side {
         /* max-width: 10px; */
@@ -611,35 +596,26 @@ textarea {
 
     }
     .contact-social-buttons {
+        display: none;
+    }
+    .mobile-social-buttons {
+        display: flex;
+        justify-content: space-evenly;
         align-items: center;
-        justify-content: center;
-        margin: auto;
-        bottom: auto;
-        top: auto;
-        bottom: -90px;
-        left: 5vw;
+        width: 50%;
     }
     .resume-text {
         position: absolute;
         top: 300%;
 
     }
-    /* .contact-base-icon-container a img, .contact-light-icon-container img {
-        position: relative;
-        margin-left: 13vw;
-        margin-right: 13vw;
-        margin: auto;
-        width: 48px; 
-        padding: 3px;
-        border: 2px solid var(--purple-darkest);
-        border-radius: 25px
-    } */
     .contact-form-side {
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
         right: 0;
+        min-height: 500px;
         min-width: 50%;
         max-width: 70%;
     }
@@ -656,9 +632,10 @@ textarea {
         display: flex;
         position: absolute;
         width: 85%;
-        min-height: 310px;
+        min-height: 470px;
         bottom: 25px;
     }
+
     .checkbox-label {
         margin-left: -30%;
     }
@@ -723,7 +700,7 @@ textarea {
         flex-direction: column ; 
         justify-content: center;
         min-height: 750px;
-        top: 250px;
+        top: 300px;
         margin-bottom: 5px;
     }
     .contact-socials-side {
@@ -748,8 +725,8 @@ textarea {
         min-width: 145px;
         padding: 15%;
     }
-    .contact-social-buttons {
-        left: 10vw;
+    .mobile-social-buttons {
+        width: 70%;
     }
     .resume-text {
         top: auto;
@@ -777,6 +754,7 @@ textarea {
         left: auto;
         right: auto;
         height: 470px;
+        min-width: 330px;
     }
     .mobile-bg img {
 
@@ -799,13 +777,8 @@ textarea {
     }
 }
 @media screen and (max-width: 968px) {
-    
     .contact-right-side {
         width: 70vw;
-    }
-    .contact-social-buttons {
-        left: 8vw;
-        margin-left: 5%;
     }
     .contact-left-side img {
         width: 150vw !important;
@@ -838,30 +811,60 @@ textarea {
 }
 
 @media screen and (max-width: 768px) {
+    .mobile-banner-container {
+        display: none;
+    }
+    .contact-mail-icon-container {
+        display: none;
+    }
+    .contact-title {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: -25%;
+        right: 0 !important;
+        margin: 0;
+        right: auto;
+        width: 150%;
+    }
+    .contact-title h1 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-left: 2%;
+        border-top-right-radius: 0;
+    }
+    .contact-title h1::before {
+        left: auto;
+    }
     .contact-right-left-side-container {
         height: 1200px;
+
+    }
+    .contact-right-side {
+        top: 235px;
     }
     .contact-socials-side {
-        min-width: 85%;
+        min-width: 90%;
         margin: 0 auto;
     }
     .contact-picture {
         left: 0;
-        margin-left: -13%;
+        margin-left: -33%;
     }
-    .contact-social-buttons {
-        left: 8vw;
-        margin-left: 5%;
-        bottom: -65px;
+    .mobile-social-buttons {
+        width: 90%;
     }
     .col {
         display: flex;
         justify-content: center;
         min-width: none;
     }
+
     .left-side {
         max-width: 100px !important;
         flex-direction: column;
+        font-size: 80%;
     }
     .resume-text {
         top: 390px;

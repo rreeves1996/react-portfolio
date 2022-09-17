@@ -1,10 +1,17 @@
 import React from 'react';
+import { useState } from 'react';
 import stars1 from '../assets/stars1.png';
 import stars2 from '../assets/stars2.png';
 import stars3 from '../assets/stars3.png';
 
 
 function Navbar({ currentPage, handlePageChange }) {
+    // const [collapsed, toggleCollapse] = useState(true);
+
+    // const collapseNav = () => {
+    //     toggleCollapse(state => !state);
+    // }
+
     return (
         <>
             <img src={stars1} alt="stars1" id="stars1" className="object" data-value="6" />
@@ -17,17 +24,29 @@ function Navbar({ currentPage, handlePageChange }) {
                         <h2>dev</h2>
                     </a>
                     {/* <code>!! WEBSITE STILL UNDER CONSTRUCTION !!</code> */}
-                    <button className="navbar-toggler"
-                        type="button"
-                        data-mdb-toggle="collapse"
-                        data-mdb-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <i className="fas fa-bars"></i>
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div className="navbar-nav">
+                    <div className='nav-burger' 
+                      onClick={() => {
+                        let navBurger = document.querySelector('.nav-burger');
+                        let burgerLine = document.querySelectorAll('.burger-bar');
+                        let navbar = document.querySelector('.navbar-collapse');
+                        let toggle = document.querySelector('.collapsed');
+
+                        if(toggle) {
+                            navbar.className = 'navbar-collapse';
+                            navBurger.className = 'nav-burger active';
+
+                        } else {
+                            navbar.className = 'navbar-collapse collapsed';
+                            navBurger.className = 'nav-burger';
+                        }
+
+                    }}>
+                        <div className='burger-bar' id='burger-bar1'></div>
+                        <div className='burger-bar' id='burger-bar2'></div>
+                        <div className='burger-bar' id='burger-bar3'></div>
+                    </div>
+                    <div className="navbar-collapse collapsed">
+                        <div className="nav">
                             <a href="#home" id="home" 
                                 onClick={() => handlePageChange("Home")}
                                 className={currentPage === "Home" ? "nav-link nav-link-current" : "nav-link"}>

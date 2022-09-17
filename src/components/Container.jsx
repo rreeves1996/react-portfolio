@@ -6,6 +6,7 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
+import Wrapper from "./Wrapper";
 
 import '../assets/style/style.css';
 
@@ -51,6 +52,11 @@ export default function Container() {
     <>
       <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
         <main>
+          {/* {currentPage === "Home" ? (
+            <></>
+          ) : (
+            <Wrapper />
+          )} */}
           {renderPage()}  
         </main>
       <Footer />

@@ -391,7 +391,16 @@ function Portfolio({ currentTab, handleTabChange }) {
                             </div>
                             <h1>Portfolio</h1>
                         </div>
+                        <div className="mobile-banner-container">
+                            <div className="mobile-banner"></div>
+                        </div>
                         {renderTab()}
+                    </div>
+                    <div className="portfolio-mobile-bg">
+                        <img src={mountainsImage} alt="mountains-mobile" className="portfolio-mountains-mobile" />
+                        <img src={treesImage} alt="trees-mobile" className="portfolio-trees-mobile" />
+                        <img src={city1Image} alt="city1-mobile" className="portfolio-city1-mobile" />
+                        <img src={city2Image} alt="city2-mobile" className="portfolio-city2-mobile" />
                     </div>
                 </div>
             </div>
