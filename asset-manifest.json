@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.5f8b786d.css",
+    "main.js": "/react-portfolio/static/js/main.bfcfc2bb.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/unnamed.jpg": "/react-portfolio/static/media/unnamed.43c943c222387453f380.jpg",
+    "static/media/self.png": "/react-portfolio/static/media/self.1d0c996b36d97cff69a4.png",
+    "static/media/teamgen.png": "/react-portfolio/static/media/teamgen.d76e4b43d3e5705fa643.png",
+    "static/media/trees.png": "/react-portfolio/static/media/trees.bb0e97aa39b24ce70a15.png",
+    "static/media/carousel-code.png": "/react-portfolio/static/media/carousel-code.019beab0f3f3981ba3a8.png",
+    "static/media/ftf.png": "/react-portfolio/static/media/ftf.720ff15ab066b9c52100.png",
+    "static/media/linkedin-icon.png": "/react-portfolio/static/media/linkedin-icon.2f9c5f788e66cc1d0622.png",
+    "static/media/instagram-icon.png": "/react-portfolio/static/media/instagram-icon.15599f0debd575afd014.png",
+    "static/media/city1.png": "/react-portfolio/static/media/city1.33cec067a220c612b1ce.png",
+    "static/media/emptracker.png": "/react-portfolio/static/media/emptracker.670fa1e4fa5e8ead6f65.png",
+    "static/media/stars1.png": "/react-portfolio/static/media/stars1.812bff2a53f3cb5ee678.png",
+    "static/media/stars2.png": "/react-portfolio/static/media/stars2.e8cda588ef76bea746c8.png",
+    "static/media/smp.png": "/react-portfolio/static/media/smp.9f9def3487e2b886262d.png",
+    "static/media/weather.png": "/react-portfolio/static/media/weather.135b82da68eb7ba70498.png",
+    "static/media/github-icon.png": "/react-portfolio/static/media/github-icon.ba4768272de14df411a9.png",
+    "static/media/city2.png": "/react-portfolio/static/media/city2.125f8a7f66d143feb20e.png",
+    "static/media/stars3.png": "/react-portfolio/static/media/stars3.69cb403a6a1245226591.png",
+    "static/media/mountains.png": "/react-portfolio/static/media/mountains.c1569042a8872618e1c9.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.5f8b786d.css.map": "/react-portfolio/static/css/main.5f8b786d.css.map",
+    "main.bfcfc2bb.js.map": "/react-portfolio/static/js/main.bfcfc2bb.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f8b786d.css",
+    "static/js/main.bfcfc2bb.js"
+  ]
+}
