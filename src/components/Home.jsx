@@ -14,17 +14,12 @@ export default function Home({ handlePageChange }) {
     return (
         <>
             <div className="home-container">
-                <div className="front-page-text">
-                    <h6>Hi there, I'm</h6>
-                    <h1>Ryan Reeves</h1>
-                    <h4>designer, developer, engineer</h4>
-                </div>
-                <div className="home-picture-bg">
+
+                <div className="home-hub">
                     <div className="social">
                         <img src={homePortrait} alt="home" className="home-picture" />
 
                         <div className="social-buttons">
-                            <div className="base-icon-container">
                                 <a href="#linkedin">
                                     <img src={linkedinIcon} alt="linkedin" id="linkedin-icon" className="base-icon" />
                                 </a>
@@ -34,30 +29,32 @@ export default function Home({ handlePageChange }) {
                                 <a href="#instagram">
                                     <img src={instagramIcon} alt="instagram" id="instagram-icon" className="base-icon" />
                                 </a>
+                        </div>
+                        <div className="home-nav">
+                            <div className="home-nav-links">
+                                <a href="#about" 
+                                    onClick={() => handlePageChange("About")}
+                                    id="home-about">› About</a>
+                                <a href="#portfolio" 
+                                    onClick={() => handlePageChange("Portfolio")}
+                                    id="home-projects">› Projects</a>
+                                <a href="#resume"
+                                    onClick={() => handlePageChange("Resume")}
+                                    id="home-resume">› Resume</a>
+                                <a href="#contact"
+                                    onClick={() => handlePageChange("Contact")}
+                                    id="home-contact">› Contact</a>
                             </div>
                         </div>
                     </div>
-                    <div className="home-nav">
-                        <div className="home-nav-links">
-                            <a href="#about" 
-                                onClick={() => handlePageChange("About")}
-                                id="home-about">› About</a>
-                            <a href="#portfolio" 
-                                onClick={() => handlePageChange("Portfolio")}
-                                id="home-projects">› Projects</a>
-                            <a href="#resume"
-                                onClick={() => handlePageChange("Resume")}
-                                id="home-resume">› Resume</a>
-                            <a href="#contact"
-                                onClick={() => handlePageChange("Contact")}
-                                id="home-contact">› Contact</a>
-                        </div>
-                    </div>
+
+                    <header className="hub-label">
+                        <h6>Hi there, I'm</h6>
+                        <h1>Ryan Reeves</h1>
+                        <h4>designer, developer, engineer</h4>
+                    </header>
                 </div>
                 <div className="home-right-left-side-container">
-                    <div className="home-right-side">
-                        
-                    </div>
                     <div className="home-left-side">
                         <img src={mountainsImage} alt="mountains" className="home-mountains" />
                         <img src={treesImage} alt="trees" className="home-trees" />

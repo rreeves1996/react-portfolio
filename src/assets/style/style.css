@@ -30,7 +30,7 @@ main {
 
     overflow: hidden;
 }
-.page-background {
+/* .page-background {
     display: flex;
     flex-direction: column;
     width: 30vw;
@@ -45,7 +45,7 @@ main {
     width: 50vw;
     left: -20vw;
     background-repeat: no-repeat;
-}
+} */
 .trees, .city1, .city2 {
     bottom: 0px;
 }
@@ -77,50 +77,51 @@ main {
 .nav-burger {
     position: fixed;
     display: none;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    width: 85px;
-    height: 85px;
-    right:0px;
-    top: 0px;
-    cursor: pointer;
+
+    width: 85px; height: 85px;
+    top: 0px; right:0px;
     border-radius: 5px;
+    background-color: transparent;
+
+    cursor: pointer;
     z-index: 6;
+
     transition: filter 0.15s,
     background-color 0.15s;
 }
 .burger-bar {
-    position: absolute;
     display: flex;
-    width: 45px;
-    height: 4px;
+
+    width: 35px; height: 3px;
+    margin: 5px;
     border-radius: 5px;
     background-color: var(--purple);
-    transition: transform 0.5s,
+    
+    transition: transform 0.4s,
+    width 0.4s,
+    opacity 0.1s,
     background-color 0.15s;
 }
 
-#burger-bar2 {
-    transform: translateY(-19px);
-}
-#burger-bar3 {
-    transform: translateY(19px);
-}
-
 .navbar {
-    
-    display: flex;
     position: relative;
-    background-color: transparent !important;
-    box-shadow: none;
-    height: 100px;
+    display: flex;
     justify-items: center;
+
+    height: 100px;
     padding: 10px 0px 10px 0px;
+    background-color: transparent !important;
+    
+    box-shadow: none;
 }
 .navbar-collapse {
     position: absolute;
-    right: 20px !important;
-    bottom: 30px;
+
+    bottom: 30px; right: 20px !important; 
+    
     z-index: 5;
 }
 .navbar-brand {
@@ -225,10 +226,7 @@ main {
     margin-top 0.3s,
     color 0.6s;
 }
-.navbar-toggler {
-    position: absolute;
-    right: 10px;
-}
+
 .nav-link-current {
     pointer-events: none;
     opacity: 55%;
@@ -592,7 +590,6 @@ footer p {
     .navbar {
         position: fixed;
         z-index: 999;
-        /* background-color: var(--purple-darkest) !important; */
         backdrop-filter: blur(7px) !important;
         width: 100%;
         height: 85px;
@@ -606,7 +603,6 @@ footer p {
         opacity: 50%;
     }
     .navbar-brand {
-        display: flex;
         height: 55px;
         width: 170px;
         font-size: 100%;
@@ -668,15 +664,22 @@ footer p {
     .nav-burger {  
         display: flex;
     }
-
-    .nav-burger:hover {
-        background-color: rgba(255, 255, 255, 0.048);
+    .nav-burger:hover, .nav-burger.active {
+        background-color: rgba(255, 255, 255, 0.082);
     }
     .nav-burger:hover .burger-bar, .nav-burger.active .burger-bar {
         background-color: var(--purple-highlighted);
     }
-    .nav-burger.active {
-        background-color: rgba(255, 255, 255, 0.082);
+    .nav-burger.active #burger-bar1 {
+        width: 40px;
+        transform: rotate(45deg) translate(9px, 10px);
+    }
+    .nav-burger.active #burger-bar2 {
+        opacity: 0;
+    }
+    .nav-burger.active #burger-bar3 {
+        width: 40px;
+        transform: rotate(-45deg) translate(9px, -10px);
     }
     .navbar-collapse {
         position: fixed;

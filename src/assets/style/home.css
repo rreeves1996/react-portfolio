@@ -18,22 +18,12 @@
     width: 100vw;
     flex-direction: row;
 }
-.home-right-side {
-    position: absolute;
-    display: flex;
-    background: none;
-    background-color: transparent;
-    width: 50vw;
-    height: 81vh;
-    align-items: center;
-    right: 0;
-
-}
-.home-picture-bg {
+.home-hub {
     position: absolute;
     display: flex;
     flex-direction: row;
-
+    justify-content: center;
+    align-items: center;
     top: 170px;
     z-index: 5;
 }
@@ -50,6 +40,7 @@
     box-shadow: inset 0px 0px 4px var(--blue);
     padding: 35px;
     background-color: #26243d;
+    z-index: 5;
 }
 .home-nav {
     display: flex;
@@ -106,22 +97,15 @@
 }
 .social-buttons {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-evenly;
     position: absolute;
-    right: -44px;
+    right: -75px;
     top: 30px;
     z-index: 5;
 }
-.base-icon-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 0;
-}
-
-.base-icon-container a img {
+.social-buttons a img {
     position: relative;
     margin: 8px;
     width: 48px; 
@@ -129,13 +113,13 @@
     border: 2px solid var(--purple-darkest);
     border-radius: 25px
 }
-.base-icon-container a {
+.social-buttons a {
     z-index: 0 !important ;
     cursor: pointer;
     transition: filter 0.1s,
     transform 0.15s;
 }
-.base-icon-container a:hover {
+.social-buttons a:hover {
     filter: brightness(2);
     transform: scale(1.05);
 }
@@ -166,13 +150,12 @@
     bottom: 30px;
 }
 
-.front-page-text {
+.hub-label {
     position: absolute;
     width: 462px;
-    top: 380px;
-    z-index: 5;
+    top: 210px;
 }
-.front-page-text h1 {
+.hub-label h1 {
     font-size: 7em;
     line-height: 1;
     border-radius: 3px;
@@ -192,7 +175,7 @@
     background-color:#1c192b;
     filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.322));
 }
-.front-page-text h1::before {
+.hub-label h1::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -201,7 +184,7 @@
     width: 15px;
     background-color: var(--purple-highlighted);
 }
-.front-page-text h1::after {
+.hub-label h1::after {
     content: "";
     position: absolute;
     top: 0px;
@@ -210,7 +193,7 @@
     width: 328px;
     background-color: var(--purple-highlighted);
 }
-.front-page-text h6 {
+.hub-label h6 {
     color: var(--purple-highlighted);
     position: relative;
     text-align: center;
@@ -223,7 +206,7 @@
     z-index: 1;
 }
 
-.front-page-text h4 {
+.hub-label h4 {
     position: relative;
     color: var(--blue-highlighted);
     font-size: 2em;
@@ -244,13 +227,12 @@
 }
 @media screen and (max-width: 768px) {
     .home-nav {
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
-    .home-picture-bg {
-        transform: translateX(110px);
-    }
+
     .social-buttons {
-        right: -60px;
+        right: -90px;
     }
     .home-left-side img {
         width: 150vw;
