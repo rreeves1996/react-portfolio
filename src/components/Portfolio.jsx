@@ -165,7 +165,7 @@ function Portfolio({ currentTab, handleTabChange }) {
                             <div className="arrow">{prevButton}</div>
                         </button>
                     </div>
-                    <code><strong>Wow, look at that carousel!</strong> (Hover me 😀)</code>
+                    <code>Wow, look at that carousel! 😀</code>
                 </div>
             </div>
         </>;
@@ -340,7 +340,7 @@ function Portfolio({ currentTab, handleTabChange }) {
                             <div className="arrow">{prevButton}</div>
                         </button>
                     </div>
-                    <code><strong>Wow, look at that carousel!</strong> (Hover me 😀)</code>
+                    <code>Wow, look at that carousel! 😀</code>
                 </div>
             </div>
         </>;
