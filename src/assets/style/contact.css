@@ -557,27 +557,18 @@ textarea {
     }
     .contact-socials-side {
         display: flex;
-        position: relative;
+        position: absolute;
+        min-height: 500px;
         left: auto;
+        top: auto;
+        bottom: 0;
         margin-left: 35px;
         margin-right: 35px;
         width:min-content;
         min-width: 45%;
         max-width: 70%;
     }
-    .contact-socials-side h6 {
-        position: absolute;
-        height: auto;
-        top: -20vh;
-        margin-top: 0; 
-        margin-bottom: 0;
 
-    }
-    .contact-info {
-        top: 0;
-        margin-top: -10vh;
-        align-items: flex-start;
-    }
     .contact-picture {
         min-width: 180px;
         max-width: 250px;
@@ -690,7 +681,7 @@ textarea {
 }
 @media screen and (max-width: 1420px) {
     .contact-right-left-side-container {
-        height: 1250px;
+        height: 1150px;
     }
     .contact-left-side img {
         width: 100vw !important;
@@ -700,19 +691,27 @@ textarea {
         flex-direction: column ; 
         justify-content: center;
         min-height: 750px;
-        top: 300px;
+        top: 210px;
         margin-bottom: 5px;
     }
     .contact-socials-side {
-        width: 95%;
+        min-width: 75%;
     }
     .contact-socials-side h6 {
+        position: absolute;
+        height: auto;
+
+        margin-top: 0; 
+        margin-bottom: 0;
+
         top: 45px;
     }
     .contact-info {
+        align-items: flex-start;
         margin-top: 160px;
         width: 100%;
         margin-left: 0;
+        top: 0;
         font-size: 1.05em;
         left: 0;
         line-height: 140%;
@@ -722,7 +721,8 @@ textarea {
     }
     .contact-picture {
         left: 0;
-        min-width: 145px;
+        min-width: auto;
+        width: 165px !important;
         padding: 15%;
     }
     .mobile-social-buttons {
@@ -836,21 +836,25 @@ textarea {
     }
     .contact-title h1::before {
         left: auto;
+        transform: translateX(5px);
     }
     .contact-right-left-side-container {
-        height: 1200px;
+        height: 1120px;
 
     }
     .contact-right-side {
-        top: 235px;
+        top: 171px;
     }
     .contact-socials-side {
         min-width: 90%;
         margin: 0 auto;
     }
     .contact-picture {
-        left: 0;
-        margin-left: -33%;
+        left: auto;
+        right: 0;
+        width: 150px !important;
+        padding: 15%;
+        /* margin-left: -33%; */
     }
     .mobile-social-buttons {
         width: 90%;

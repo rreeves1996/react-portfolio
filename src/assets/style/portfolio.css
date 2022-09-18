@@ -103,6 +103,8 @@
 }
 .portfolio-icon {
     position: absolute;
+    display: flex;
+    width: 15vw;
     transform: scale(0.975);
     filter: drop-shadow(0px 0px 10px var(--blue))
             drop-shadow(0px 0px 4px var(--blue));
@@ -556,7 +558,7 @@ button {
     .portfolio-right-side::after {
         display: none;
     }
-    .mobile-banner-container {
+    .portfolio-right-side .mobile-banner-container {
         display: flex;
         position: absolute;
         right: 0;
@@ -566,12 +568,12 @@ button {
         height: 100px;
         border-top-right-radius: 5px;
     }
-    .mobile-banner {
+    .portfolio-right-side .mobile-banner {
         position: absolute;
         background-color: rgba(255, 255, 255, 0.075);
         height: 100px;
         width: 70%;
-        left: 432px;
+        left: 457px;
         border-top-right-radius: 5px;
     }
     .portfolio-title {
@@ -589,23 +591,26 @@ button {
     .portfolio-title h1 {
         padding: 7px 10px 10px 77px;
         font-size: 110px;
-        width: 395px;
+        width: 420px;
         height: 135px;
     }
     .portfolio-title h1::before {
-        width: 283px;
-        bottom: 22px;
-        left: 89px;
+        width: 311px;
+        bottom: 25px;
+        left: 84px;
     }
     .portfolio-folder-icon-container {
         width: 225px;
         height: 225px;
         left: -150px;
     }
+    .portfolio-icon {
+        width: 225px;
+    }
     .project-tabs {
         position: absolute;
         left: 32vw;
-        top: -150px;
+        top: -150px !important;
         bottom:auto;
         height: 50px;
         font-size: 2em;
@@ -665,7 +670,7 @@ button {
 }
 @media screen and (max-width: 1420px) {
     .portfolio-right-left-side-container {
-        height: 1250px;
+        height: 1200px;
     }
     .portfolio-left-side img {
         width: 100vw !important;
@@ -675,36 +680,35 @@ button {
         flex-direction: column ; 
         justify-content: center;
         min-height: 750px;
-        top: 300px;
+        top: 220px;
         margin-bottom: 5px;
     }
-    .portfolio-title {
-        display: flex;
-        text-align: center;
-        align-items: center;
+    .project-tabs {
+        justify-content: space-between;
+        top: 20px !important;
+        left: auto;
+        right: auto;
+    }
+    .project-tabs h5 {
         position: absolute;
-        z-index: 5;
-        width: 480px;
-        top: -180px;
-        height: 200px;
-        left: 30px;
-        border-top-right-radius: 20px;
+        width: 220px;
+        left: auto;
+        right: -210px;
     }
-    .portfolio-title h1 {
-        padding: 7px 10px 10px 77px;
-        font-size: 110px;
-        width: 395px;
-        height: 135px;
+    .solo-active, .solo-inactive, .group-active, .group-inactive {
+        position: relative;
+        left: auto;
+        background-image: none;
+        width: 100px;
+        transform: scale(1.5);
+        height: 42px;
+        border-radius: 5px;
+        margin: 35px;
+        background-color: rgba(255, 255, 255, 0.116);
+        transition: background-color 0.1s;
     }
-    .portfolio-title h1::before {
-        width: 283px;
-        bottom: 22px;
-        left: 89px;
-    }
-    .portfolio-folder-icon-container {
-        width: 225px;
-        height: 225px;
-        left: -150px;
+    .solo-active:hover, .solo-inactive:hover, .group-active:hover, .group-inactive:hover {
+        background-color: rgba(255, 255, 255, 0.192);
     }
     .solo-projects, .group-projects {
         display: flex;
@@ -712,7 +716,8 @@ button {
         flex-direction: column;
         justify-content: center;
     }
-    .text-side {
+    .text-side, .group-project-text {
+        
         left: auto;
         top: auto;
         bottom: 0;
@@ -720,16 +725,24 @@ button {
         width: 100%;
         max-width: 100% !important;
     }
+    .group-project-text {
+        height: 40%;
+        display: flex;
+        justify-content: center;
+    }
 
     .slider-side {
         display: flex;
         justify-content: center;
-        top: 10px;
+        top: 75px;
         padding: 0 10%;
         min-width: 100%;
         max-width: 100%;
     }
-
+    .slider-side h1 {
+        font-size: 4em;
+        margin-bottom: 5px;
+    }
     .mobile-bg img {
 
         left: 65vw !important;
@@ -748,5 +761,121 @@ button {
     .portfolio-mountains-mobile {
         bottom: 25vh;
         width: 100vw !important;
+    }
+}
+@media screen and (max-width: 968px) {
+    .portfolio-right-side {
+        width: 70vw;
+    }
+
+    .portfolio-left-side img {
+        width: 150vw !important;
+        left: -113vw !important;
+       
+    }
+    .portfolio-trees {
+        bottom: -50px !important;
+    }
+    .portfolio-mobile-bg img{
+        left: 71vw !important;
+        transform: translateX(1px);
+    }
+    .mobile-bg img {
+
+        left: 68vw !important;
+        bottom: 0;
+    }
+    .portfolio-city1-mobile {
+        bottom: 200px !important;
+        width: 230vw !important;
+    }
+    .portfolio-city2-mobile {
+        width: 300vw !important;
+
+    }
+    .portfolio-trees-mobile {
+        bottom: 250px !important;
+        width: 160vw !important;
+    }
+    .portfolio-mountains-mobile {
+        bottom: -80px;
+        width: 190vw !important;
+    }
+    .portfolio-right-side .mobile-banner-container {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-right-side .mobile-banner-container {
+        display: none;
+    }
+    .portfolio-folder-icon-container {
+        display: none;
+    }
+    .project-tabs h5 span {
+        position: absolute;
+        display: flex;
+        transform: rotate(90deg)
+        translate(-15px, 20px);
+    }
+    .project-tabs h5 {
+
+        transform: translateY(65px);
+        top: auto;
+        right: auto;
+        left: 20%;
+    }
+    .slider-side {
+        padding: 0;
+        top: 120px;
+
+    }
+    .slider-side h1 {
+        margin-bottom: -30px;
+
+    }
+    .slider-side code {
+        display: none;
+    }
+    .slider {
+        min-width: 400px;
+        width: 90%;
+        transform: scale(0.8);
+    }
+    .portfolio-title {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: -25%;
+        right: 0 !important;
+        margin: 0;
+        right: auto;
+        width: 150%;
+    }
+    .portfolio-title h1 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding-left: 2%;
+        border-top-right-radius: 0;
+    }
+    .portfolio-title h1::before {
+        left: auto;
+        transform: translateX(5px);
+    }
+    .portfolio-right-left-side-container {
+        height: calc(auto + 500px);
+
+    }
+    .portfolio-right-side {
+        top: 171px;
+    }
+    .text-side {
+        justify-content: center;
+        min-width: 90%;
+        min-height: 510px;
+        height: 45%;
+        margin: 0 auto;
     }
 }

@@ -6,11 +6,11 @@ import stars3 from '../assets/stars3.png';
 
 
 function Navbar({ currentPage, handlePageChange }) {
-    // const [collapsed, toggleCollapse] = useState(true);
+    const [collapsed, collapseNav] = useState(true);
 
-    // const collapseNav = () => {
-    //     toggleCollapse(state => !state);
-    // }
+    const toggleCollapse = () => {
+        collapseNav(current => !current);
+    };
 
     return (
         <>
@@ -18,29 +18,15 @@ function Navbar({ currentPage, handlePageChange }) {
             <img src={stars2} alt="stars2" id="stars2" className="object" data-value="3" />
             <img src={stars3} alt="stars3" id="stars3" className="object" data-value="2" />
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="navbar-bg"></div>
                 <div className="container-fluid">
                     <a href="#home" className="navbar-brand" onClick={() => handlePageChange("Home")}>
                         <h1>rreeves</h1>
                         <h2>dev</h2>
                     </a>
                     {/* <code>!! WEBSITE STILL UNDER CONSTRUCTION !!</code> */}
-                    <div className='nav-burger' 
-                      onClick={() => {
-                        let navBurger = document.querySelector('.nav-burger');
-                        let burgerLine = document.querySelectorAll('.burger-bar');
-                        let navbar = document.querySelector('.navbar-collapse');
-                        let toggle = document.querySelector('.collapsed');
-
-                        if(toggle) {
-                            navbar.className = 'navbar-collapse';
-                            navBurger.className = 'nav-burger active';
-
-                        } else {
-                            navbar.className = 'navbar-collapse collapsed';
-                            navBurger.className = 'nav-burger';
-                        }
-
-                    }}>
+                    <div className={collapsed ? 'nav-burger' : 'nav-burger active'}
+                      onClick={() => toggleCollapse}>
                         <div className='burger-bar' id='burger-bar1'></div>
                         <div className='burger-bar' id='burger-bar2'></div>
                         <div className='burger-bar' id='burger-bar3'></div>
@@ -48,7 +34,10 @@ function Navbar({ currentPage, handlePageChange }) {
                     <div className="navbar-collapse collapsed">
                         <div className="nav">
                             <a href="#home" id="home" 
-                                onClick={() => handlePageChange("Home")}
+                                onClick={() => {
+                                    let navbar = document.querySelector('.navbar-collapse');
+                                    handlePageChange("Home");
+                                }}
                                 className={currentPage === "Home" ? "nav-link nav-link-current" : "nav-link"}>
                                 Home
                             </a>

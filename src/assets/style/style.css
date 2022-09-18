@@ -25,8 +25,9 @@ body {
 main {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #7fdfffc7 100%);
-    margin-top: 2.1vh;
+    margin-top: 75px;
     min-height: 700px;
+
     overflow: hidden;
 }
 .page-background {
@@ -591,33 +592,78 @@ footer p {
     .navbar {
         position: fixed;
         z-index: 999;
-        background-color: var(--purple-darkest) !important;
+        /* background-color: var(--purple-darkest) !important; */
+        backdrop-filter: blur(7px) !important;
         width: 100%;
         height: 85px;
         top: 0;
+    }
+    .navbar-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--purple-darkest);
+        opacity: 50%;
     }
     .navbar-brand {
         display: flex;
         height: 55px;
         width: 170px;
         font-size: 100%;
+        outline: none;
+        border-top: 3px solid var(--purple);
+        border-left: 3px solid var(--purple);
+        border-right: 3px solid var(--purple);
+        transition: border-color 0.5s;
+    }
+    .navbar-brand:hover {
+        border-color: var(--purple-highlighted);
+        transition: border-color 0.5s;
     }
     .navbar-brand::before {
-        display: none;
+        position: absolute;
+        width: 109px;
+        height: 3px;
+        background-color: var(--purple);
+        bottom: 0;
+        left: 0;
+        border-radius: 0px;
+        transition: background-color 0.5s;
+    }
+    .navbar-brand:hover::before {
+        width: 109px;
+        background-color: var(--purple-highlighted);
+        transition: background-color 0.5s;
     }
     .navbar-brand::after {
-        display: none;
+        filter: none;
+        position: absolute;
+        width: 15px;
+        height: 3px;
+        background-color: var(--purple);
+        bottom: 0;
+        left: 150px;
+        border-radius: 0px;
+        transition: background-color 0.5s;
+    }
+    .navbar-brand:hover::after {
+        width: 15px;
+        background-color: var(--purple-highlighted);
+        transition: background-color 0.5s;
     }
     .navbar-brand h1 {
-
+        border-bottom: no;
         margin: 0;
     }
     .navbar-brand h2 {
-        bottom: -17px;
+        bottom: -15px;
         width: auto;
         height: auto;
         margin-left: 95px;
-        background-color: var(--purple-darkest);
+        background-color: transparent;
+    }
+    .navbar-brand:hover h2 {
+        margin-left: 95px !important;
     }
     .nav-burger {  
         display: flex;
