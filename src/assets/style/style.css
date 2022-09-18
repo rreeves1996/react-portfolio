@@ -25,7 +25,7 @@ body {
 main {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #7fdfffc7 100%);
-    margin-top: 75px;
+    margin-top: 21px;
     min-height: 700px;
 
     overflow: hidden;
