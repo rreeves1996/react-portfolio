@@ -10,7 +10,7 @@ import instagramIcon from "../assets/instagram-icon.png";
 
 import '../assets/style/contact.css';
 
-function Contact() {
+export default function Contact({ handlePageChange }) {
     return (
         <>
             <div className="contact-container">
@@ -44,7 +44,7 @@ function Contact() {
                                     <p><strong>Phone</strong>: (425) 418-3963</p>
                                     <p><strong>Email</strong>: rreeves.dev@gmail.com</p>
                                     <p><strong>Location</strong>: Bothell, WA</p>
-                                    <p><strong>Timezone</strong>: PDT (GMT - 07:00)</p>
+                                    <p><strong>Timezone</strong>: PDT (GMT -07:00)</p>
                                     <div className="contact-social-buttons">
                                         <a href="#linkedin">
                                             <img src={linkedinIcon} alt="linkedin" id="linkedin-icon" className="contact-base-icon" />
@@ -78,7 +78,7 @@ function Contact() {
                                     <img src={instagramIcon} alt="facebook" id="facebook-icon" className="mobile-icon" />
                                 </a>
                             </div>
-                            <p className="resume-text">Click <a href="#">here</a> to view my resume</p>
+                            <p className="resume-text">Click <a href="#resume" onClick={() => handlePageChange("Resume")}>here</a> to view my resume</p>
                         </div>
                         <div className="contact-form-side">
                             <h1>Don't be shy...</h1>
@@ -131,5 +131,3 @@ function Contact() {
         </>
     )
 }
-
-export default Contact;

@@ -37,7 +37,7 @@ export default function Container() {
       case "Portfolio":
         return <Portfolio currentTab={currentTab} handleTabChange={handleTabChange} />;
       case "Contact":
-        return <Contact />;
+        return <Contact handlePageChange={handlePageChange}/>;
       case "Resume":
         return <Resume />;
       default:
