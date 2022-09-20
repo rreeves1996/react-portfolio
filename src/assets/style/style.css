@@ -23,41 +23,45 @@ body {
     overflow-x: hidden;
 }
 main {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #7fdfffc7 100%);
     height: calc(100vh - 185px);
     min-height: 750px;
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #7fdfffc7 100%);
+}
+.mobile-background {
+    display: none;
 }
 .wrapper {
-    display: flex;
     position: relative;
+    display: flex;  
     flex-direction: row;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
+    justify-content: center;    align-items: flex-end;
+
+    width: 100%;    height: 100%;
+
     background: rgb(0,0,0);
     background: linear-gradient(70deg, rgba(0,0,0,0) 65%, var(--purple-dark) 100%);
 }
 .background {
-    display: flex;
     position: relative;
-    align-items: flex-end;
-    justify-self: flex-start;
+    display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 81vh;
-    /* transform: translateX(-20%); */
-    justify-content: center;
+    justify-content: center;    align-items: flex-end;
+
+    width: 30%; height: 81vh;
+    min-height: 900px;
+
     z-index: 0;
     overflow-x: hidden;
 }
 
 .background img {
-    image-rendering: pixelated;
     position: absolute;
+    
     width: 50vw;
 
+    image-rendering: pixelated;
     background-repeat: no-repeat;
 }
 
@@ -68,7 +72,7 @@ main {
     background-color: rgba(255, 255, 255, 0.075);
     flex-direction: row;
     width: 68%;   
-    height: 49.5vh;
+    min-height: 500px;
     align-items: center;
     justify-content: center;
     margin: 1%;
@@ -628,9 +632,51 @@ footer p {
         top: -3vh;
     }
 }
-@media screen and (max-width: 1500px) {
-    .portfolio-right-side {
+@media screen and (max-width: 1600px) {
+    .wrapper {
+        justify-content: center;
+    }
+    .page-container {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 15px auto;
+    }
+    .background {
+        width: 20%;
+        transform: translateX(-15px);
+
+    }
+    .background img {
+        width: 60vw;
+
+    }
+    .city1 {
+        width: 50vw !important;
+        left: -10vw !important;
+        bottom: 60px;
+    }
+    .mobile-background {
+        display: flex;
+        position: relative;
         flex-direction: column;
+        width: 20%;
+        height: 50vh;
+        justify-content: center;
+        z-index: 0;
+        transform: translateX(15px);
+    }
+    .mobile-background img {
+        image-rendering: pixelated;
+        position: absolute;
+        width: 80vw;
+        height: 81vh;
+        min-height: 900px;
+        background-repeat: no-repeat;
+        bottom: 0;
+    }
+    .city1-mobile {
+        transform: translateY(-20px);
     }
 }
 @media screen and (max-width: 992px) {

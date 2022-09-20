@@ -6,7 +6,7 @@ import stars3 from '../assets/stars3.png';
 
 export default function Stars() {
     
-    // Parallex function that tracks mouse location to move stars picture multiplicatively based on the elements data-value
+    // Parallex function that tracks mouse location to move stars pictures individually based on the elements data-value creating a "3D" effect
     document.addEventListener("mousemove", parallax);
 
     function parallax(e) {
@@ -19,6 +19,7 @@ export default function Stars() {
         move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
         })
     }
+
     return (
         <div className="stars-container">
             <img src={stars1} alt="stars1" id="stars1" className="object" data-value="6" />
