@@ -7,22 +7,13 @@ import homePortrait from "../assets/self.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
 import githubIcon from "../assets/github-icon.png";
 import instagramIcon from "../assets/instagram-icon.png";
+import Wrapper from "./Wrapper";
 
 import '../assets/style/contact.css';
 
 export default function Contact({ handlePageChange }) {
     return (
         <>
-            <div className="contact-container">
-                <div className="contact-right-left-side-container">
-                    <div className="contact-left-side">
-                        <img src={mountainsImage} alt="mountains" className="contact-mountains" />
-                        <img src={treesImage} alt="trees" className="contact-trees" />
-                        <img src={city1Image} alt="city1" className="contact-city1" />
-                        <img src={city2Image} alt="city2" className="contact-city2" />
-                    </div>
-                    <div className="contact-right-side">
-
                         <div className="contact-title">
                             <div className="contact-mail-icon-container">
                                 <div className="mail-icon-top"></div>
@@ -46,16 +37,16 @@ export default function Contact({ handlePageChange }) {
                                     <p><strong>Location</strong>: Bothell, WA</p>
                                     <p><strong>Timezone</strong>: PDT (GMT -07:00)</p>
                                     <div className="contact-social-buttons">
-                                        <a href="#linkedin">
+                                        <a href="https://www.linkedin.com/in/rreevesdev/">
                                             <img src={linkedinIcon} alt="linkedin" id="linkedin-icon" className="contact-base-icon" />
                                         </a>
-                                        <a href="#github">
+                                        <a href="https://github.com/rreeves1996">
                                             <img src={githubIcon} alt="github" id="github-icon" className="contact-base-icon" />
                                         </a>
-                                        <a href="#instagram">
+                                        <a href="https://www.instagram.com/ryanmakesloudnoises/">
                                             <img src={instagramIcon} alt="instagram" id="instagram-icon" className="contact-base-icon" />
                                         </a>
-                                        <a href="#instagram">
+                                        <a href="https://www.instagram.com/ryanmakesloudnoises/">
                                             <img src={instagramIcon} alt="facebook" id="facebook-icon" className="contact-base-icon" />
                                         </a>
                                     </div>
@@ -119,15 +110,12 @@ export default function Contact({ handlePageChange }) {
                                 <button type="submit" class="submit-btn">Submit</button>
                             </form>
                         </div>
-                        <div className="mobile-bg">
+                        {/* <div className="mobile-bg">
                             <img src={mountainsImage} alt="mountains-mobile" className="contact-mountains-mobile" />
                             <img src={treesImage} alt="trees-mobile" className="contact-trees-mobile" />
                             <img src={city1Image} alt="city1-mobile" className="contact-city1-mobile" />
                             <img src={city2Image} alt="city2-mobile" className="contact-city2-mobile" />
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </div> */}
         </>
     )
 }

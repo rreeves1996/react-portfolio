@@ -7,6 +7,7 @@ import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
 import Wrapper from "./Wrapper";
+import Stars from "./Stars";
 
 import '../assets/style/style.css';
 
@@ -14,19 +15,7 @@ export default function Container() {
   const [currentPage, setCurrentPage] = useState("Home");
   const [currentTab, setCurrentTab] = useState("Solo");
   
-  // Parallex function that tracks mouse location to move stars picture multiplicatively based on the elements data-value
-  document.addEventListener("mousemove", parallax);
 
-  function parallax(e) {
-    document.querySelectorAll(".object").forEach(function(move) {
-      var movingValue = move.getAttribute("data-value");
-
-      var x = (e.clientX * movingValue) / 250;
-      var y = (e.clientY * movingValue) / 250;
-
-      move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
-    })
-  }
 
   const renderPage = () => {
     switch(currentPage) {
@@ -41,7 +30,7 @@ export default function Container() {
       case "Resume":
         return <Resume />;
       default:
-        return <Home />;
+        return <Home handlePageChange={handlePageChange} />;
     }
   };
   
@@ -52,12 +41,16 @@ export default function Container() {
     <>
       <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
         <main>
-          {/* {currentPage === "Home" ? (
-            <></>
+          <Stars />
+          {currentPage === "Home" || currentPage === "Resume" ? (
+            <>
+              {renderPage()}
+            </>
           ) : (
-            <Wrapper />
-          )} */}
-          {renderPage()}  
+            <Wrapper>
+              {renderPage()}  
+            </Wrapper>
+          )}
         </main>
       <Footer />
     </>

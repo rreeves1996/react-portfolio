@@ -25,32 +25,68 @@ body {
 main {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0) 0%, #7fdfffc7 100%);
-    margin-top: 21px;
-    min-height: 700px;
-
-    overflow: hidden;
+    height: calc(100vh - 185px);
+    min-height: 750px;
 }
-/* .page-background {
+.wrapper {
     display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(70deg, rgba(0,0,0,0) 65%, var(--purple-dark) 100%);
+}
+.background {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-self: flex-start;
     flex-direction: column;
-    width: 30vw;
+    width: 30%;
     height: 81vh;
+    /* transform: translateX(-20%); */
     justify-content: center;
     z-index: 0;
+    overflow-x: hidden;
 }
 
-.page-background img {
+.background img {
     image-rendering: pixelated;
     position: absolute;
     width: 50vw;
-    left: -20vw;
+
     background-repeat: no-repeat;
-} */
+}
+
+.page-container {
+    display: flex;
+    position: relative;
+
+    background-color: rgba(255, 255, 255, 0.075);
+    flex-direction: row;
+    width: 68%;   
+    height: 49.5vh;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 .trees, .city1, .city2 {
     bottom: 0px;
 }
 .mountains {
     bottom: 30px;
+}
+.stars-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
 }
 #stars1 {
     top: -20px;
@@ -69,9 +105,8 @@ main {
 .object {
     position: absolute;
     image-rendering: pixelated;
-    width: 2000px;
-    height: 90vh;
-    top: 0;
+    width: 2000px;    height: 900px;
+
 }
 
 .nav-burger {
@@ -109,33 +144,39 @@ main {
 .navbar {
     position: relative;
     display: flex;
-    justify-items: center;
-
-    height: 100px;
-    padding: 10px 0px 10px 0px;
-    background-color: transparent !important;
-    
+    flex-direction: column;
+    width: 100vw;
+    height: 115px;
+    padding: 0;
+    background-color: transparent;
     box-shadow: none;
 }
-.navbar-collapse {
+.navbar-bg {
+    display: none;
     position: absolute;
-
-    bottom: 30px; right: 20px !important; 
-    
+    width: 100%;
+    height: 100%;
+    background-color: var(--purple-darkest);
+    opacity: 50%;
+}
+.navbar-collapse {
+    position: relative;
+    margin: 10px;
+    align-self: flex-end !important;
     z-index: 5;
 }
 .navbar-brand {
-    position: absolute;
-    margin: 25px auto;
-    left: 20px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 195px;
+    margin: 20px auto 30px 20px;
+
     border-radius: 3px;
     outline: 3px solid var(--purple);
-    height: 65px;
+    height: 65px !important;
     z-index: 0;
     transition: width 0.3s ease-in-out,
     height 0.3s ease-in-out,
@@ -602,11 +643,7 @@ footer p {
         top: 0;
     }
     .navbar-bg {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: var(--purple-darkest);
-        opacity: 50%;
+        display: flex;
     }
     .navbar-brand {
         height: 55px;
