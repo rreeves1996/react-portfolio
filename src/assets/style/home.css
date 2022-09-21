@@ -96,7 +96,7 @@
     justify-content: space-evenly;
     position: absolute;
     right: -75px;
-    top: 30px;
+    top: 26px;
     z-index: 5;
 }
 .social-buttons a img {
@@ -110,11 +110,12 @@
 .social-buttons a {
     z-index: 0 !important ;
     cursor: pointer;
-    transition: filter 0.1s,
+    transition: filter 0.15s,
     transform 0.15s;
 }
 .social-buttons a:hover {
-    filter: brightness(2);
+    filter: brightness(7)
+    drop-shadow(0px 0px 6px var(--blue));
     transform: scale(1.05);
 }
 
