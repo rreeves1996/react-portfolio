@@ -382,9 +382,6 @@ export default function Portfolio({ currentTab, handleTabChange }) {
                 </div>
                 <h1>Portfolio</h1>
             </div>
-            <div className="mobile-banner-container">
-                <div className="mobile-banner"></div>
-            </div>
             {renderTab()}
         </>
     )

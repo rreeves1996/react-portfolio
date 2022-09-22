@@ -468,95 +468,43 @@ button {
 }
 
 @media screen and (max-width: 1600px) {
-    .portfolio-right-left-side-container {
-        display: flex;
-        justify-content: center;
-    }
-    .portfolio-left-side {
-        position: relative;
-        width: 70vw;
-        transform: translateX(-20px);
-        left: -35vw;
 
-    }
-    .portfolio-left-side img {
-        width: 60vw;
-
-    }
-    .portfolio-city1 {
-        width: 50vw !important;
-        left: -10vw !important;
-        bottom: 60px;
-    }
-    .portfolio-right-side {
-        position: absolute;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        width: 60vw;
-        top: auto;
-        min-height: 510px;
-        bottom: 0vh;
-        margin-bottom: 25px;
-        /* max-height: 61vh; */
-    }
-    .portfolio-right-side::after {
-        display: none;
-    }
-    .portfolio-right-side .mobile-banner-container {
-        display: flex;
-        position: absolute;
-        right: 0;
-        overflow-x: hidden;
-        top: -100px;
-        width: 60vw;
-        height: 100px;
-        border-top-right-radius: 5px;
-    }
-    .portfolio-right-side .mobile-banner {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.075);
-        height: 100px;
-        width: 70%;
-        left: 457px;
-        border-top-right-radius: 5px;
-    }
     .portfolio-title {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        position: absolute;
         z-index: 5;
-        width: 480px;
-        top: -180px;
-        height: 200px;
-        left: 30px;
-        border-top-right-radius: 20px;
+        width: 100%;
+        height: 145px;
+        bottom: calc(500px + .5vw);
+        
+    }
+    .portfolio-title::after {
+        height: 80px;
+        width: calc(100% - 461px - .5vw);
+
     }
     .portfolio-title h1 {
-        padding: 7px 10px 10px 77px;
+        padding-bottom: 15px;
+        padding-right: 18px;
         font-size: 110px;
-        width: 420px;
-        height: 135px;
+        width: 461px;
+        height: 100%;
     }
     .portfolio-title h1::before {
-        width: 311px;
-        bottom: 25px;
-        left: 84px;
+        width: 314px;
+        bottom: 28px;
+        left: 116px;
     }
     .portfolio-folder-icon-container {
         width: 225px;
         height: 225px;
-        left: -150px;
+
     }
     .portfolio-icon {
         width: 225px;
     }
     .project-tabs {
         position: absolute;
-        left: 32vw;
-        top: -150px !important;
-        bottom:auto;
+        left: 60%;
+        bottom: 580px;
         height: 50px;
         font-size: 2em;
         align-items: center;
@@ -581,52 +529,10 @@ button {
         min-width: 400px;
         min-height: 350px;
     }
-    .portfolio-mobile-bg {
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        width: 70vw;
-        height: 50vh;
-        bottom: 0vh;
-        justify-content: center;
-        z-index: 0;
-    }
-    .portfolio-mobile-bg img {
-        image-rendering: pixelated;
-        position: absolute;
-        width: 80vw;
-        transform: translateX(25px);
-        left: 65.5vw;
-        background-repeat: no-repeat;
-    }
-    .portfolio-mountains-mobile {
-        bottom: 0vh;
-    }
-    .portfolio-city2-mobile {
-        bottom: 0vh;
-        width: 90vw !important;
-    }
-    .portfolio-city1-mobile {
-        bottom: 8vh;
-    }
-    .portfolio-trees-mobile {
-        bottom: 170px;
-    }
 }
 @media screen and (max-width: 1420px) {
-    .portfolio-right-left-side-container {
-        height: 1200px;
-    }
-    .portfolio-left-side img {
-        width: 100vw !important;
-        left: -60vw !important;
-    }
-    .portfolio-right-side {
-        flex-direction: column ; 
-        justify-content: center;
-        min-height: 750px;
-        top: 220px;
-        margin-bottom: 5px;
+    .portfolio-title {
+        top: calc(-145px - .5vw);
     }
     .project-tabs {
         justify-content: space-between;
@@ -655,14 +561,9 @@ button {
     .solo-active:hover, .solo-inactive:hover, .group-active:hover, .group-inactive:hover {
         background-color: rgba(255, 255, 255, 0.192);
     }
-    .solo-projects, .group-projects {
-        display: flex;
-        width: 100%; height: 100%;
-        flex-direction: column;
-        justify-content: center;
-    }
+
     .text-side, .group-project-text {
-        
+        position: relative;
         left: auto;
         top: auto;
         bottom: 0;
@@ -674,6 +575,7 @@ button {
         height: 40%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
     .slider-side {
@@ -687,25 +589,6 @@ button {
     .slider-side h1 {
         font-size: 4em;
         margin-bottom: 5px;
-    }
-    .mobile-bg img {
-
-        left: 65vw !important;
-    }
-    .portfolio-city1-mobile {
-        bottom: 18vh !important;
-        width: 100vw !important;
-    }
-    .portfolio-city2-mobile {
-        width: 150vw !important;
-    }
-    .portfolio-trees-mobile {
-        bottom: 25vh !important;
-        width: 100vw !important;
-    }
-    .portfolio-mountains-mobile {
-        bottom: 25vh;
-        width: 100vw !important;
     }
 }
 @media screen and (max-width: 968px) {
