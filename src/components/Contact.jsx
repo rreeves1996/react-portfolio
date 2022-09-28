@@ -21,9 +21,7 @@ export default function Contact({ handlePageChange }) {
                             </div>
                             <h1>Contact</h1>
                         </div>
-                        <div className="mobile-banner-container">
-                            <div className="mobile-banner"></div>
-                        </div>
+
                         <div className="contact-socials-side">
                             <h6>
                                 <strong>I am actively looking for opportunities that will help me develop
@@ -110,12 +108,7 @@ export default function Contact({ handlePageChange }) {
                                 <button type="submit" class="submit-btn">Submit</button>
                             </form>
                         </div>
-                        {/* <div className="mobile-bg">
-                            <img src={mountainsImage} alt="mountains-mobile" className="contact-mountains-mobile" />
-                            <img src={treesImage} alt="trees-mobile" className="contact-trees-mobile" />
-                            <img src={city1Image} alt="city1-mobile" className="contact-city1-mobile" />
-                            <img src={city2Image} alt="city2-mobile" className="contact-city2-mobile" />
-                        </div> */}
+
         </>
     )
 }

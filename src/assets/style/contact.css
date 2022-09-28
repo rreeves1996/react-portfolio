@@ -1,13 +1,3 @@
-.mobile-bg {
-    display: none;
-}
-.mobile-banner-container {
-    display: none;
-}
-.mobile-social-buttons {
-    display: none;
-}
-
 .contact-title {
     display: flex;
     text-align: center;
@@ -55,9 +45,9 @@
 .contact-title h1::before {
     content:"";
     position: absolute;
-    right: 1.95vw;
+    right: 2vw;
     bottom: 1.6vw;
-    width: 71%;
+    width: 71.2%;
     border-radius: 20px;
     padding-right: 10px;
     height: 2px;
@@ -467,36 +457,30 @@ textarea {
         height: 100px;
         border-top-right-radius: 5px;
     }
-    .mobile-banner {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.075);
-        height: 100px;
-        width: 70%;
-        left: 432px;
-        border-top-right-radius: 5px;
-    }
+
     .contact-title {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        position: absolute;
         z-index: 5;
-        width: 480px;
-        top: -180px;
-        height: 200px;
-        left: 30px;
-        border-top-right-radius: 20px;
+        width: 100%;
+        height: 145px;
+        bottom: calc(500px + .5vw);
+        
+    }
+    .contact-title::after {
+        height: 80px;
+        width: calc(100% - 405px - .5vw);
+
     }
     .contact-title h1 {
-        padding: 7px 10px 10px 77px;
+        padding-bottom: 15px;
+        padding-right: 20px;
         font-size: 110px;
-        width: 395px;
-        height: 135px;
+        width: 405px;
+        height: 100%;
     }
     .contact-title h1::before {
-        width: 283px;
-        bottom: 22px;
-        left: 89px;
+        width: 284px;
+        bottom: 28px;
+        left: 95px;
     }
     .contact-mail-icon-container {
         width: 225px;
@@ -524,6 +508,10 @@ textarea {
         left: -27%;
         bottom: 0;
     }
+    .contact-info {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
     .left-side {
         /* max-width: 10px; */
         min-width: 70%;
@@ -541,7 +529,7 @@ textarea {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        width: 50%;
+        width: 100%;
     }
     .resume-text {
         position: absolute;
@@ -571,7 +559,7 @@ textarea {
         display: flex;
         position: absolute;
         width: 85%;
-        min-height: 470px;
+        min-height: 40px;
         bottom: 25px;
     }
 
@@ -590,7 +578,7 @@ textarea {
         width: 100%;
     }
     textarea {
-        height: 30.75%;
+        height: 25%;
     }
     .submit-btn {
         bottom: 3%

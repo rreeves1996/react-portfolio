@@ -153,49 +153,62 @@
 #about-image1 {
     filter: drop-shadow(3px 4px 3px rgba(0, 0, 0, 0.384));
     border-radius: 20px;
-    width: 23%;
+    height: 85%;
+    margin-left: -3%;
+    margin-right: 3%;
+    float: left;
     position: relative;
+
+}
+.about-container {
+    height: 500px !important;
 }
 .about-text {
     position: relative;
     display: flex;
     color: var(--purple-darkest);
     right: -30px;
-    width: 900px;
+    width: 100%;
     margin-top: 15px;
-    height: 80%; 
+    height: 100%; 
+    padding: 1%;
 
 }
 .text1 {
     display: flex;
     flex-direction: column;
     width: 49%;
+    height: 100%;
+
     margin-right: 30px;
 }
 .text1 h5 {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     text-align: center;
 }
 .text1 p {
     text-indent: 25px;
     margin: 0px;
 }
+.text-container {
+    height: 80%;
+}
 .text2 {
     width: 48%;
 }
 .text2 p {
+    margin: 0px;
     text-indent: 25px;
 }
 .bootcamp {
-    font-size: .8vw;
+    position: relative;
+    font-size: 1.1em;
     padding: 16px 20px 10px 20px;
     border: 2px solid var(--purple-darkest);
     border-radius: 20px;
-    width: 48%;
-    height: 70%;
-    position: absolute;
-    bottom: 0px;
-    right: 1%;
+    width: 95%;
+    height: auto;
+    margin-top: 15px;
     background-color: var(--purple-darkest);
     color: var(--blue);
 }
@@ -208,8 +221,75 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    margin-top: 15px;
     padding-right: 10px;
 }
 .bootcamp li {
     filter: drop-shadow(2px 3px 1px rgba(0, 0, 0, 0.466));
+}
+@media screen and (max-width: 1600px) {
+    .est {
+        left: auto;
+        right: -7%;
+    }
+    .about-title {
+        z-index: 5;
+        width: 100%;
+        height: 145px;
+        bottom: calc(500px + .5vw);
+        
+    }
+    .about-title::after {
+        height: 80px;
+        width: calc(100% - 465px - .5vw);
+
+    }
+    .about-title h1 {
+        padding-bottom: 15px;
+        padding-right: 18px;
+        font-size: 110px;
+        width: 465px;
+        height: 100%;
+    }
+    .about-title h1::before {
+        width: 354px;
+        bottom: 28px;
+        left: 81px;
+    }
+    .about-user-icon-container {
+        width: 225px;
+        height: 225px;
+
+    }
+    .about-user-icon {
+        width: 145px;
+    }
+    .about-text h5 {
+        transform: translateY(10px);
+    }
+    .about-text {
+        font-size: .8em;
+    }
+    #about-image1 {
+        height: 70%;
+        margin-left: 1%;
+    }
+    .bootcamp {
+        margin-top: 30px;
+        font-size: 1.3em;
+        width: 100%;
+        height: auto
+    }
+    .text2 {
+        width: 42%;
+        margin-left: 4%;
+    }
+    .text1 {
+        width: 44%;
+    }
+    .text1 h5 {
+        font-size: 1.2em;
+    }
+
 }

@@ -20,59 +20,69 @@ function About() {
                 <h1>About Me</h1>
             </div>
             <div className="est">est. 1996</div>
-            <img src={about1} alt="about1" id="about-image1" />
-            
-            <div className="about-text">
-                <div className="text1">
+    
+
+            <div className="about-container">
+                <div className="about-text">
+                    
+                    <div className="text1">
                     <h5>
                         <strong>Lifelong learner, artist, and oxford comma user
                             with the work ethic of a stonemason
                         </strong>
                     </h5>
-                    <p>
-                        I was born in <strong>Seattle, WA</strong> in 1996, where I currently
-                        still reside. Some day, I plan on escaping this gray-scale city to
-                        live in a place that the sun sees for more than 2 months out of the year -
-                        until that day, I comprimise by creating blindingly-bright websites and drinking
-                        craft beers!
-                    </p>
-                    <p>
-                        I am a musician at heart, and have been playing piano since I was 3. I've
-                        worked the trades (working on cars, brickmasonry/stonemasonry) and taught private 
-                        music lessons on and off since I graduated high school. I spent a short stint 
-                        studying music composition in college; however, I eventually decided to switch careers into tech
-                        and get out of the trades.
-                    </p>
-                </div>
-                <div className="text2">
-                    <p>
-                        I am currently attending the <strong>University of Washington Full-Stack Development Bootcamp</strong>,
-                        where I will graduate on September 17th. This program covered a wide range of topics, including:
-                    </p>
-                </div>
-                <div className="bootcamp">
-                    <h4><strong>HTML, CSS, JavaScript</strong></h4>
-                    <div className="lists">
-                    <ul>
-                        <li>Git</li>
-                        <li>Node</li>
-                        <li>Express.js</li>
-                        <li>MySQL</li>
-                        <li>NoSQL</li>
-                        <li>Web APIs</li>
-                        <li>OOP</li>
-                        <li>JavaScript CS</li>
-                    </ul>
-                    <ul>
-                        <li>Heroku</li>
-                        <li>React.js</li>
-                        <li>Sequelize</li>
-                        <li>MongoDB</li>
-                        <li>Insomnia</li>
-                        <li>Third-Party APIs</li>
-                        <li>PWAs</li>
-                        <li>MVC</li>
-                    </ul>
+                    <div className="text-container">
+                        <img src={about1} alt="about1" id="about-image1" />
+                            <p>
+                                I was born in <strong>Seattle, WA</strong> in 1996, where I currently
+                                still reside. Some day, I plan on escaping this gray-scale city to
+                                live in a place that the sun sees for more than 2 months out of the year -
+                                until that day, I comprimise by creating blindingly-bright websites and drinking
+                                craft beers!
+                            </p>
+                            <p>
+                                I am a musician at heart, and have been playing piano since I was 3. I've
+                                worked the trades (working on cars, brickmasonry/stonemasonry) and taught private 
+                                music lessons on and off since I graduated high school. I spent a short stint 
+                                studying music composition in college; however, I eventually decided to switch careers into tech
+                                and get out of the trades.
+                            </p>
+                        </div>
+                    </div>
+                    <div className="text2">
+                        <p>
+                            I am a University of Washington Full-Stack Bootcamp graduate (September 17th 2022, graduated with an A-) - however, the biggest thing I've learned,
+                            if anything, is how much more I have to learn.
+                        </p>
+                        <p>
+                            Though I have a ton of progress to make, the bootcamp did give me a solid foundation in:
+                        </p>
+                        <div className="bootcamp">
+                        <h4><strong>HTML, CSS, JavaScript</strong></h4>
+                        <div className="lists">
+                        <ul>
+                            <li>Git</li>
+                            <li>Node</li>
+                            <li>Express.js</li>
+                            <li>MySQL</li>
+                            <li>NoSQL</li>
+                            <li>Web APIs</li>
+                            <li>OOP</li>
+                            <li>JavaScript CS</li>
+                        </ul>
+                        <ul>
+                            <li>Heroku</li>
+                            <li>React.js</li>
+                            <li>Sequelize</li>
+                            <li>MongoDB</li>
+                            <li>Insomnia</li>
+                            <li>Third-Party APIs</li>
+                            <li>PWAs</li>
+                            <li>MVC</li>
+                        </ul>
+                        </div>
+                    </div>
+                    
                     </div>
                 </div>
             </div>
