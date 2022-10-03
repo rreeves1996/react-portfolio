@@ -656,13 +656,15 @@ footer p {
         left: -10vw !important;
         bottom: 60px;
     }
+
     .mobile-background {
         display: flex;
         position: relative;
         flex-direction: column;
-        width: 20%;
-        height: 50vh;
-        justify-content: center;
+        justify-content: center; align-items: flex-start;
+        width: 20%; height: 81vh;
+        min-height: 900px;
+        
         z-index: 0;
         transform: translateX(15px);
     }
@@ -670,8 +672,8 @@ footer p {
         image-rendering: pixelated;
         position: absolute;
         width: 80vw;
-        height: 81vh;
-        min-height: 900px;
+
+
         background-repeat: no-repeat;
         bottom: 0;
     }
@@ -680,11 +682,9 @@ footer p {
     }
 }
 @media screen and (max-width: 1420px) {
-    .portfolio-title h1 {
-        min-width: 500px;
-    }
+
     .wrapper {
-        height: 1200px;
+        height: 1000px;
         align-items: flex-start;
         margin-top: 220px;
     }
@@ -695,6 +695,25 @@ footer p {
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
+    }
+    .background, .mobile-background {
+        transform: translateY(100px);
+    }
+    .background {
+        margin-right: 1vw;
+    }
+    .mobile-background {
+        margin-left: 1vw;
+    }
+    .background img {
+        width: 110vw;
+
+    }
+    .mobile-background img {
+        width: 140vw;
+    }
+    .city1, .city1-mobile {
+        width: 180vw !important;
     }
 
 }
