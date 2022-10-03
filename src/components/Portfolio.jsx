@@ -15,7 +15,7 @@ import icon from "../assets/portfolio.png";
 
 import '../assets/style/portfolio.css';
 
-function Portfolio({ currentTab, handleTabChange }) {
+export default function Portfolio({ currentTab, handleTabChange }) {
     const nextButton = `❭`;
     const prevButton = `❬`;
 
@@ -376,36 +376,13 @@ function Portfolio({ currentTab, handleTabChange }) {
 
     return (
         <>
-            <div className="portfolio-container">
-                <div className="portfolio-right-left-side-container">
-                    <div className="portfolio-left-side">
-                        <img src={mountainsImage} alt="mountains" className="portfolio-mountains" />
-                        <img src={treesImage} alt="trees" className="portfolio-trees" />
-                        <img src={city1Image} alt="city1" className="portfolio-city1" />
-                        <img src={city2Image} alt="city2" className="portfolio-city2" />
-                    </div>
-                    <div className="portfolio-right-side">
-                        <div className="portfolio-title">
-                            <div className="portfolio-folder-icon-container">
-                                <img src={icon} alt='icon' className='portfolio-icon' />
-                            </div>
-                            <h1>Portfolio</h1>
-                        </div>
-                        <div className="mobile-banner-container">
-                            <div className="mobile-banner"></div>
-                        </div>
-                        {renderTab()}
-                    </div>
-                    <div className="portfolio-mobile-bg">
-                        <img src={mountainsImage} alt="mountains-mobile" className="portfolio-mountains-mobile" />
-                        <img src={treesImage} alt="trees-mobile" className="portfolio-trees-mobile" />
-                        <img src={city1Image} alt="city1-mobile" className="portfolio-city1-mobile" />
-                        <img src={city2Image} alt="city2-mobile" className="portfolio-city2-mobile" />
-                    </div>
+            <div className="portfolio-title">
+                <div className="portfolio-folder-icon-container">
+                    <img src={icon} alt='icon' className='portfolio-icon' />
                 </div>
+                <h1>Portfolio</h1>
             </div>
+            {renderTab()}
         </>
     )
 }
-
-export default Portfolio;

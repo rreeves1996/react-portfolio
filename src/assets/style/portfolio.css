@@ -1,91 +1,24 @@
-.portfolio-mobile-bg {
-    display: none;
-}
-.portfolio-mobile-banner-container {
-    display: none;
-}
 
-.portfolio-container {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* overflow: hidden; */
-    max-width: 100vw;
-    /* min-height: 81vh; */
-    margin-bottom: 0;
-    bottom: 0px;
-    background: rgb(0,0,0);
-    background: linear-gradient(70deg, rgba(0,0,0,0) 65%, var(--purple-dark) 100%);
-}
-.portfolio-right-left-side-container {
-    display: flex;
-    width: 100vw;
-    flex-direction: row;
-    align-items: flex-end;
-}
-.portfolio-left-side {
-    display: flex;
-    flex-direction: column;
-    width: 30vw;
-    height: 81vh;
-    justify-content: center;
-    z-index: 0;
-}
-
-.portfolio-left-side img {
-    image-rendering: pixelated;
-    position: absolute;
-    width: 50vw;
-    left: -20vw;
-    background-repeat: no-repeat;
-}
-.portfolio-trees, .portfolio-city1, .portfolio-city2 {
-    bottom: 0px;
-}
-.portfolio-mountains {
-    bottom: 30px;
-}
-
-.portfolio-right-side {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.075);
-    flex-direction: row;
-    top: 0;
-    width: 68vw;   
-    min-height: 49.5vh;
-    align-items: center;
-    justify-content: center;
-    margin-left: 1vw;
-    margin-bottom: 1vw;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-.portfolio-right-side::after {
-    content:"";
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.075);
-    height: 10vh;
-    width: 37.8vw;
-    right: 0;
-    bottom: 49.5vh;
-    border-top-right-radius: 5px;
-}
 .portfolio-title {
     display: flex;
     text-align: center;
+    justify-content: center;
     align-items: center;
     position: absolute;
     z-index: 5;
-    width: 60vw;
-    bottom: 49.5vh;
-    margin-bottom: .5vw;
-    margin-left: -.5vw;
-    left:2.5vw;
-    border-top-right-radius: 20px;
+    width: 100%;
+    height: 180px;
+    bottom: calc(500px + .5vw);
+}
+.portfolio-title::after {
+    content:"";
+    display: flex;
+    position: absolute;
+    right: 0;   bottom: -.5vw;
+    background-color: rgba(255, 255, 255, 0.075);
+    height: 100px;
+    width: calc(100% - 30.5vw);
+    border-top-right-radius: 5px;
 }
 .portfolio-folder-icon-container {
     position: absolute;
@@ -93,7 +26,7 @@
     justify-content: center;
     align-items: center;
     background-color: #26243d;
-    left: -9.75vw;
+    left: -7.9vw;
     border-radius: 250px;
     width: 14.5vw;
     height: 14.5vw;
@@ -108,31 +41,37 @@
     transform: scale(0.975);
     filter: drop-shadow(0px 0px 10px var(--blue))
             drop-shadow(0px 0px 4px var(--blue));
-    left: 0;
+    left: -2%;
 }
 .portfolio-title h1 {
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     text-transform: lowercase;
     font-size: 7vw;
     letter-spacing: .07em;
-    top: 0px;
-    padding: .6vw 1.5vw 1.6vw 5vw;
+    width: 30vw;
+    height: 100%;
+    padding-bottom: .5vw;
+    padding-right: 1.5vw;
     color: var(--blue-highlighted);
     text-shadow: 0px 0px 7px var(--blue),
     0px 0px 12px var(--blue);
-    filter: drop-shadow(0px 0px 12px #7fdfff7c);
     z-index: 2;
     line-height: 1;
     margin: 0;
-    border-top-right-radius: 25px;
+    border-top-right-radius: 35px;
     background-color: #26243d;
-    filter: drop-shadow(2px 4px 5px rgba(0, 0, 0, 0.322));
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.322));
 }
 .portfolio-title h1::before {
     content:"";
     position: absolute;
-    left: 5.25vw;
-    bottom: 2.1vw;
-    width: 72%;
+    right: 2.2vw;
+    bottom: 1.6vw;
+    width: 67%;
     border-radius: 20px;
     padding-right: 10px;
     height: 2px;
@@ -143,8 +82,8 @@
 .project-tabs {
     position: absolute;
     display: flex;
-    left: 32vw;
-    bottom: 59.5vh;
+    left: 32.5vw;
+    bottom: 600px;
     height: 50px;
     font-size: 2em;
     align-items: center;
@@ -523,95 +462,43 @@ button {
 }
 
 @media screen and (max-width: 1600px) {
-    .portfolio-right-left-side-container {
-        display: flex;
-        justify-content: center;
-    }
-    .portfolio-left-side {
-        position: relative;
-        width: 70vw;
-        transform: translateX(-20px);
-        left: -35vw;
 
-    }
-    .portfolio-left-side img {
-        width: 60vw;
-
-    }
-    .portfolio-city1 {
-        width: 50vw !important;
-        left: -10vw !important;
-        bottom: 60px;
-    }
-    .portfolio-right-side {
-        position: absolute;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        width: 60vw;
-        top: auto;
-        min-height: 510px;
-        bottom: 0vh;
-        margin-bottom: 25px;
-        /* max-height: 61vh; */
-    }
-    .portfolio-right-side::after {
-        display: none;
-    }
-    .portfolio-right-side .mobile-banner-container {
-        display: flex;
-        position: absolute;
-        right: 0;
-        overflow-x: hidden;
-        top: -100px;
-        width: 60vw;
-        height: 100px;
-        border-top-right-radius: 5px;
-    }
-    .portfolio-right-side .mobile-banner {
-        position: absolute;
-        background-color: rgba(255, 255, 255, 0.075);
-        height: 100px;
-        width: 70%;
-        left: 457px;
-        border-top-right-radius: 5px;
-    }
     .portfolio-title {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        position: absolute;
         z-index: 5;
-        width: 480px;
-        top: -180px;
-        height: 200px;
-        left: 30px;
-        border-top-right-radius: 20px;
+        width: 100%;
+        height: 145px;
+        bottom: calc(500px + .5vw);
+        
+    }
+    .portfolio-title::after {
+        height: 80px;
+        width: calc(100% - 461px - .5vw);
+
     }
     .portfolio-title h1 {
-        padding: 7px 10px 10px 77px;
+        padding-bottom: 15px;
+        padding-right: 18px;
         font-size: 110px;
-        width: 420px;
-        height: 135px;
+        width: 461px;
+        height: 100%;
     }
     .portfolio-title h1::before {
-        width: 311px;
-        bottom: 25px;
-        left: 84px;
+        width: 314px;
+        bottom: 28px;
+        left: 116px;
     }
     .portfolio-folder-icon-container {
         width: 225px;
         height: 225px;
-        left: -150px;
+        left: -120px;
     }
     .portfolio-icon {
         width: 225px;
     }
     .project-tabs {
         position: absolute;
-        left: 32vw;
-        top: -150px !important;
-        bottom:auto;
+        left: 60%;
+        bottom: 580px;
         height: 50px;
         font-size: 2em;
         align-items: center;
@@ -636,64 +523,29 @@ button {
         min-width: 400px;
         min-height: 350px;
     }
-    .portfolio-mobile-bg {
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        width: 70vw;
-        height: 50vh;
-        bottom: 0vh;
-        justify-content: center;
-        z-index: 0;
-    }
-    .portfolio-mobile-bg img {
-        image-rendering: pixelated;
-        position: absolute;
-        width: 80vw;
-        transform: translateX(25px);
-        left: 65.5vw;
-        background-repeat: no-repeat;
-    }
-    .portfolio-mountains-mobile {
-        bottom: 0vh;
-    }
-    .portfolio-city2-mobile {
-        bottom: 0vh;
-        width: 90vw !important;
-    }
-    .portfolio-city1-mobile {
-        bottom: 8vh;
-    }
-    .portfolio-trees-mobile {
-        bottom: 170px;
-    }
 }
 @media screen and (max-width: 1420px) {
-    .portfolio-right-left-side-container {
-        height: 1200px;
+    .portfolio-title {
+        top: calc(-145px - .5vw);
     }
-    .portfolio-left-side img {
-        width: 100vw !important;
-        left: -60vw !important;
-    }
-    .portfolio-right-side {
-        flex-direction: column ; 
-        justify-content: center;
-        min-height: 750px;
-        top: 220px;
-        margin-bottom: 5px;
-    }
+
     .project-tabs {
+        position: relative;
         justify-content: space-between;
-        top: 20px !important;
+        top: 0px;
         left: auto;
         right: auto;
+        margin: 30px 0 10px;
     }
     .project-tabs h5 {
         position: absolute;
         width: 220px;
         left: auto;
         right: -210px;
+    }
+    .solo-projects, .group-projects {
+       display: flex;
+       flex-direction: column-reverse;
     }
     .solo-active, .solo-inactive, .group-active, .group-inactive {
         position: relative;
@@ -710,17 +562,10 @@ button {
     .solo-active:hover, .solo-inactive:hover, .group-active:hover, .group-inactive:hover {
         background-color: rgba(255, 255, 255, 0.192);
     }
-    .solo-projects, .group-projects {
-        display: flex;
-        width: 100%; height: 100%;
-        flex-direction: column;
-        justify-content: center;
-    }
     .text-side, .group-project-text {
-        
-        left: auto;
+        position: relative;
         top: auto;
-        bottom: 0;
+        left: auto;
         padding: 0 7%;
         width: 100%;
         max-width: 100% !important;
@@ -729,12 +574,14 @@ button {
         height: 40%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
     .slider-side {
+        position: relative;
         display: flex;
         justify-content: center;
-        top: 75px;
+        top: auto;
         padding: 0 10%;
         min-width: 100%;
         max-width: 100%;
@@ -743,67 +590,12 @@ button {
         font-size: 4em;
         margin-bottom: 5px;
     }
-    .mobile-bg img {
-
-        left: 65vw !important;
-    }
-    .portfolio-city1-mobile {
-        bottom: 18vh !important;
-        width: 100vw !important;
-    }
-    .portfolio-city2-mobile {
-        width: 150vw !important;
-    }
-    .portfolio-trees-mobile {
-        bottom: 25vh !important;
-        width: 100vw !important;
-    }
-    .portfolio-mountains-mobile {
-        bottom: 25vh;
-        width: 100vw !important;
-    }
 }
 @media screen and (max-width: 968px) {
     .portfolio-right-side {
         width: 70vw;
     }
 
-    .portfolio-left-side img {
-        width: 150vw !important;
-        left: -113vw !important;
-       
-    }
-    .portfolio-trees {
-        bottom: -50px !important;
-    }
-    .portfolio-mobile-bg img{
-        left: 71vw !important;
-        transform: translateX(1px);
-    }
-    .mobile-bg img {
-
-        left: 68vw !important;
-        bottom: 0;
-    }
-    .portfolio-city1-mobile {
-        bottom: 200px !important;
-        width: 230vw !important;
-    }
-    .portfolio-city2-mobile {
-        width: 300vw !important;
-
-    }
-    .portfolio-trees-mobile {
-        bottom: 250px !important;
-        width: 160vw !important;
-    }
-    .portfolio-mountains-mobile {
-        bottom: -80px;
-        width: 190vw !important;
-    }
-    .portfolio-right-side .mobile-banner-container {
-        width: 70vw;
-    }
 }
 
 @media screen and (max-width: 768px) {
