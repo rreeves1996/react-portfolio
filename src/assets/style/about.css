@@ -293,3 +293,25 @@
     }
 
 }
+@media screen and (max-width: 1420px) {
+    .about-title {
+        top: calc(-145px - .5vw);
+    }
+    .about-container {
+        width: 100%;
+        height: 100% !important;
+    }
+    .about-text {
+        flex-direction: column;
+        right: -5%;
+        width: 90%;
+    }
+    #about-image1 {
+        height: 200px !important;
+    }
+    .text1, .text2 {
+        width: 100%;
+        height: auto;
+        margin: 1% 0px;
+    }
+}

@@ -490,7 +490,7 @@ button {
     .portfolio-folder-icon-container {
         width: 225px;
         height: 225px;
-
+        left: -120px;
     }
     .portfolio-icon {
         width: 225px;
@@ -528,19 +528,14 @@ button {
     .portfolio-title {
         top: calc(-145px - .5vw);
     }
-    .portfolio-title::after {
-        height: 80px;
-        width: calc(100% - 501px - .5vw);
 
-    }
-    .portfolio-title h1 {
-        min-width: 500px;
-    }
     .project-tabs {
+        position: relative;
         justify-content: space-between;
-        top: 20px !important;
+        top: 0px;
         left: auto;
         right: auto;
+        margin: 30px 0 10px;
     }
     .project-tabs h5 {
         position: absolute;
@@ -549,8 +544,8 @@ button {
         right: -210px;
     }
     .solo-projects, .group-projects {
-        position: absolute;
-        top: 0;
+       display: flex;
+       flex-direction: column-reverse;
     }
     .solo-active, .solo-inactive, .group-active, .group-inactive {
         position: relative;
@@ -567,12 +562,10 @@ button {
     .solo-active:hover, .solo-inactive:hover, .group-active:hover, .group-inactive:hover {
         background-color: rgba(255, 255, 255, 0.192);
     }
-
     .text-side, .group-project-text {
         position: relative;
-        top: 550px;
+        top: auto;
         left: auto;
-        bottom: 0;
         padding: 0 7%;
         width: 100%;
         max-width: 100% !important;
@@ -585,9 +578,10 @@ button {
     }
 
     .slider-side {
+        position: relative;
         display: flex;
         justify-content: center;
-        top: 75px;
+        top: auto;
         padding: 0 10%;
         min-width: 100%;
         max-width: 100%;
