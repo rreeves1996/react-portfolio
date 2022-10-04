@@ -696,7 +696,7 @@ footer p {
         transform: translateY(-20px);
     }
     .city1-mobile, .city2-mobile {
-        width: 200vw !important;
+        width: 200vw;
     } 
 }
 
@@ -884,5 +884,36 @@ footer p {
     }
     .wrapper {
         margin-top: 285px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .page-container {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    .background, .mobile-background {
+        width: 5%;
+    }
+    .background {
+        transform: translateX(-5px);
+    }
+    .mobile-background {
+        transform: translateX(5px);
+    }
+    .background img {
+        width: 1000px;
+
+    }
+    .mobile-background img {
+        width: 1400px;
+    }
+    .mountains {
+        bottom: 200px;
+    }
+    .city1-mobile {
+        width: 2000px !important;
+    }
+    .trees-mobile {
+        bottom: 100px !important;
     }
 }
