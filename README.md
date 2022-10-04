@@ -32,7 +32,7 @@ Overall, this was one of my first applications where I felt like I started with 
 ## Roadmap
 
 - [ ] Reduce HTML clutter through cleaner component usage
-    - [ ] Create recurring wrapper for background
+    - [x] Create recurring wrapper for background
     - [ ] Refactor navbar to make it easily reusable
 - [ ] Reorganize file stucture (I'm looking at you, 50 yard long assets images)
 - [ ] Clean up and minimize CSS for easier refinement in future
