@@ -433,7 +433,7 @@ textarea {
         height: 100%;
     }
     .contact-title h1::before {
-        width: 284px;
+        width: 280px;
         bottom: 28px;
         left: 95px;
     }
@@ -468,9 +468,7 @@ textarea {
         margin-bottom: 20px;
     }
     .left-side {
-        /* max-width: 10px; */
         min-width: 70%;
-        /* max-height: 170px; */
         margin-top: 10px;
     }
     .col {
@@ -551,8 +549,9 @@ textarea {
     }
     .contact-socials-side {
         min-width: 75%;
-        right: -12.5%;
+        right: auto;
         min-height:auto;
+        margin: 0 auto;
     }
     .contact-socials-side h6 {
         position: relative;
@@ -565,7 +564,7 @@ textarea {
     }
     .contact-info {
         align-items: flex-start;
-        margin-top: 160px;
+        margin-top: 70px;
         width: 100%;
         margin-left: 0;
         top: 0;
@@ -583,11 +582,13 @@ textarea {
         padding: 15%;
     }
     .mobile-social-buttons {
-        width: 70%;
+        width: 85%;
     }
     .resume-text {
+        position: relative;
         top: auto;
-        bottom:53%;
+        bottom:auto;
+        margin: 15px 0;
         font-size: 1.2em;
     }
     .contact-form-side {
@@ -613,11 +614,6 @@ textarea {
         min-width: 330px;
     }
 }
-@media screen and (max-width: 968px) {
-    .contact-right-side {
-        width: 70vw;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .contact-mail-icon-container {
@@ -627,29 +623,25 @@ textarea {
         position: absolute;
         display: flex;
         justify-content: center;
-        left: -25%;
-        right: 0 !important;
-        margin: 0;
+        left: auto;
         right: auto;
+        margin: 0;        
         width: 150%;
+        top: calc(-145px - 1vw);
+    }
+    .contact-title::after {
+        display: none;
     }
     .contact-title h1 {
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
-        padding-left: 2%;
+        justify-content: center;
         border-top-right-radius: 0;
+        font-size: 9em;
     }
     .contact-title h1::before {
-        left: auto;
-        transform: translateX(5px);
-    }
-    .contact-right-left-side-container {
-        height: 1120px;
-
-    }
-    .contact-right-side {
-        top: 225px;
+        display: none;
     }
     .contact-socials-side {
         min-width: 90%;
@@ -675,8 +667,5 @@ textarea {
         max-width: 100px !important;
         flex-direction: column;
         font-size: 80%;
-    }
-    .resume-text {
-        top: 390px;
     }
 }
