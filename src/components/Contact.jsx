@@ -1,4 +1,5 @@
 import React from 'react';
+import Title from './subs/Title'
 import homePortrait from "../assets/self.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
 import githubIcon from "../assets/github-icon.png";

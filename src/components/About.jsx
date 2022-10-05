@@ -1,10 +1,6 @@
 import React from 'react';
-import mountainsImage from "../assets/mountains.png";
-import treesImage from "../assets/trees.png";
-import city1Image from "../assets/city1.png";
-import city2Image from "../assets/city2.png";
+import Title from './subs/Title';
 import about1 from "../assets/unnamed.jpg";
-
 import '../assets/style/about.css';
 
 function About() {
@@ -21,7 +17,6 @@ function About() {
             </div>
             <div className="est">est. 1996</div>
     
-
             <div className="about-container">
                 <div className="about-text">
                     

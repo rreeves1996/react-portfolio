@@ -1,12 +1,12 @@
-import React from 'react';
-import { useState, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import currentPageContext from './Container'
 
 
 function Navbar({ handlePageChange }) {
+    const currentPage = useContext(currentPageContext);
     const [collapsed, collapseNav] = useState(true);
 
-    const currentPage = useContext(currentPageContext);
+
 
     return (
         <>
@@ -27,6 +27,8 @@ function Navbar({ handlePageChange }) {
                         <a href="#home" id="home" 
                             onClick={() => {
                                 handlePageChange("Home");
+                                console.log(currentPage);
+                                console.log(currentPageContext)
                             }}
                             className={{currentPage} === "Home" ? "nav-link nav-link-current" : "nav-link"}>
                             Home

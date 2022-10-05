@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import mountainsImage from "../assets/mountains.png";
-import treesImage from "../assets/trees.png";
-import city1Image from "../assets/city1.png";
-import city2Image from "../assets/city2.png";
+import Title from './subs/Title';
+import icon from "../assets/portfolio.png";
 import soloProject1 from "../assets/proj-images/ecommerce.png";
 import soloProject2 from "../assets/proj-images/emptracker.png";
 import soloProject3 from "../assets/proj-images/readmegen.png";
@@ -11,7 +9,6 @@ import soloProject5 from "../assets/proj-images/weather.png";
 import groupProject1 from "../assets/proj-images/ftf.png";
 import groupProject2 from "../assets/proj-images/smp.png";
 import groupProject3 from "../assets/proj-images/placeholder.png";
-import icon from "../assets/portfolio.png";
 
 import '../assets/style/portfolio.css';
 
