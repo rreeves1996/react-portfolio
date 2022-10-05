@@ -31,6 +31,7 @@ Overall, this was one of my first applications where I felt like I started with 
 
 ## Roadmap
 
+- [ ] Create/organize components to improve app performance
 - [x] Reduce JSX clutter through cleaner component/state management
     - [x] Create recurring wrapper for background
     - [x] Refactor navbar to make it easily reusable
