@@ -1,10 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import currentPageContext from './Container'
 
 
-function Navbar({ currentPage, handlePageChange }) {
+function Navbar({ handlePageChange }) {
     const [collapsed, collapseNav] = useState(true);
 
+    const currentPage = useContext(currentPageContext);
 
     return (
         <>
@@ -26,22 +28,22 @@ function Navbar({ currentPage, handlePageChange }) {
                             onClick={() => {
                                 handlePageChange("Home");
                             }}
-                            className={currentPage === "Home" ? "nav-link nav-link-current" : "nav-link"}>
+                            className={{currentPage} === "Home" ? "nav-link nav-link-current" : "nav-link"}>
                             Home
                         </a>
                         <a href="#about" id="about"
-                            onClick={() => handlePageChange("About")}
-                            className={currentPage === "About" ? "nav-link nav-link-current" : "nav-link"}>
+                            onClick={() => handlePageChange("About Me")}
+                            className={{currentPage} === "About" ? "nav-link nav-link-current" : "nav-link"}>
                             About
                         </a>
                         <a href="#portfolio" id="portfolio"
                             onClick={() => handlePageChange("Portfolio")}
-                            className={currentPage === "Portfolio" ? "nav-link nav-link-current" : "nav-link"}>
+                            className={{currentPage} === "Portfolio" ? "nav-link nav-link-current" : "nav-link"}>
                             Portfolio
                         </a>
                         <a href="#contact" id="contact"
                             onClick={() => handlePageChange("Contact")}
-                            className={currentPage === "Contact" ? "nav-link nav-link-current" : "nav-link"}>
+                            className={{currentPage} === "Contact" ? "nav-link nav-link-current" : "nav-link"}>
                             Contact
                         </a>
                     </div>

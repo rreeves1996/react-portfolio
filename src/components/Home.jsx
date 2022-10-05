@@ -37,7 +37,7 @@ export default function Home({ handlePageChange }) {
                     <div className="home-nav">
                         <div className="home-nav-links">
                             <a href="#about" 
-                                onClick={() => handlePageChange("About")}
+                                onClick={() => handlePageChange("About Me")}
                                 id="home-about">› About</a>
                             <a href="#portfolio" 
                                 onClick={() => handlePageChange("Portfolio")}

@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, createContext } from 'react';
 import NavBar from './Navigation';
 import Footer from './Footer'
 import Home from './Home';
 import About from './About';
 import Portfolio from './Portfolio';
-import Resume from './Resume';
+import Resume from './subs/Resume';
 import Contact from './Contact';
 import Wrapper from "./Wrapper";
 import Stars from "./Stars";
-
 import '../assets/style/style.css';
+
+const currentPageContext = createContext();
 
 export default function Container() {
   const [currentPage, setCurrentPage] = useState("Home");
@@ -21,7 +22,7 @@ export default function Container() {
     switch(currentPage) {
       case "Home":
         return <Home handlePageChange={handlePageChange} />;
-      case "About":
+      case "About Me":
         return <About />;
       case "Portfolio":
         return <Portfolio currentTab={currentTab} handleTabChange={handleTabChange} />;
@@ -39,20 +40,22 @@ export default function Container() {
 
   return (
     <>
-      <NavBar currentPage={currentPage} handlePageChange={handlePageChange} />
-        <main>
-          <Stars />
-          {currentPage === "Home" || currentPage === "Resume" ? (
-            <>
-              {renderPage()}
-            </>
-          ) : (
-            <Wrapper>
-              {renderPage()}  
-            </Wrapper>
-          )}
-        </main>
-      <Footer />
+      <currentPageContext.Provider value={currentPage}>
+        <NavBar handlePageChange={handlePageChange} />
+          <main>
+            <Stars />
+            {currentPage === "Home" || currentPage === "Resume" ? (
+              <>
+                {renderPage()}
+              </>
+            ) : (
+              <Wrapper>
+                {renderPage()}  
+              </Wrapper>
+            )}
+          </main>
+        <Footer />
+      </currentPageContext.Provider>
     </>
   );
 }
