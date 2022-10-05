@@ -31,12 +31,13 @@ Overall, this was one of my first applications where I felt like I started with 
 
 ## Roadmap
 
-- [ ] Reduce HTML clutter through cleaner component usage
-    - [ ] Create recurring wrapper for background
-    - [ ] Refactor navbar to make it easily reusable
+- [x] Reduce JSX clutter through cleaner component/state management
+    - [x] Create recurring wrapper for background
+    - [x] Refactor navbar to make it easily reusable
+    - [ ] Make portfolio projects in to reuseable component
+    - [ ] Refactor carousel into component
 - [ ] Reorganize file stucture (I'm looking at you, 50 yard long assets images)
 - [ ] Clean up and minimize CSS for easier refinement in future
-- [ ] Refactor carousel into component
 - [ ] Make contact form functional (and a modal?)
 
 
