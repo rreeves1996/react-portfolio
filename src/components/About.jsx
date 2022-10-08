@@ -22,9 +22,7 @@ function About() {
                     
                     <div className="text1">
                     <h5>
-                        <strong>Lifelong learner, artist, and oxford comma user
-                            with the work ethic of a stonemason
-                        </strong>
+                        <strong>Lifelong learner, artist, and oxford comma enthusiast</strong>
                     </h5>
                     <div className="text-container">
                         <img src={about1} alt="about1" id="about-image1" />
@@ -46,38 +44,37 @@ function About() {
                     </div>
                     <div className="text2">
                         <p>
-                            I am a University of Washington Full-Stack Bootcamp graduate (September 17th 2022, graduated with an A-) - however, the biggest thing I've learned,
-                            if anything, is how much more I have to learn.
+                            I graduated from the University of Washington Full-Stack Development Bootcamp on September 17th - since then,
+                            the biggest thing I've learned is how much more I have to learn!
                         </p>
                         <p>
                             Though I have a ton of progress to make, the bootcamp did give me a solid foundation in:
                         </p>
                         <div className="bootcamp">
                         <h4><strong>HTML, CSS, JavaScript</strong></h4>
-                        <div className="lists">
-                        <ul>
-                            <li>Git</li>
-                            <li>Node</li>
-                            <li>Express.js</li>
-                            <li>MySQL</li>
-                            <li>NoSQL</li>
-                            <li>Web APIs</li>
-                            <li>OOP</li>
-                            <li>JavaScript CS</li>
-                        </ul>
-                        <ul>
-                            <li>Heroku</li>
-                            <li>React.js</li>
-                            <li>Sequelize</li>
-                            <li>MongoDB</li>
-                            <li>Insomnia</li>
-                            <li>Third-Party APIs</li>
-                            <li>PWAs</li>
-                            <li>MVC</li>
-                        </ul>
+                            <div className="lists">
+                                <ul>
+                                    <li>Git</li>
+                                    <li>Node</li>
+                                    <li>Express.js</li>
+                                    <li>MySQL</li>
+                                    <li>NoSQL</li>
+                                    <li>Web APIs</li>
+                                    <li>OOP</li>
+                                    <li>JavaScript CS</li>
+                                </ul>
+                                <ul>
+                                    <li>Heroku</li>
+                                    <li>React.js</li>
+                                    <li>Sequelize</li>
+                                    <li>MongoDB</li>
+                                    <li>Insomnia</li>
+                                    <li>Third-Party APIs</li>
+                                    <li>PWAs</li>
+                                    <li>MVC</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    
                     </div>
                 </div>
             </div>

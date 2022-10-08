@@ -59,28 +59,18 @@
 }
 .home-nav a {
     font-family: 'Alumni Sans Pinstripe';
-    position: relative;
     color: var(--purple-darkest) !important;
-    /* text-shadow: 0px 0px 2px var(--blue); */
     font-weight: 700;
     font-size: 2.5em;
-    margin: 22px 0px 22px 0px;
+    margin: 22px 0;
     line-height: 0;
-    right: 0px;
-    transition: font-size 0.25s ease-in-out,
-    right 0.15s ease-in-out,
-    text-shadow 0.15s,
-    color 0.15s;
+    transition: all 150ms ease-in-out;
 }
 .home-nav a:hover {
     color: var(--blue-highlighted) !important;
     font-size: 2.6em;
     right: -4px;
-    text-shadow: 0px 0px 4px var(--blue);
-    transition: font-size 0.25s ease-in-out,
-    right 0.15s ease-in-out,
-    text-shadow 0.15s,
-    color 0.15s;
+    text-shadow: 0 0 4px var(--blue);
     
 }
 .social {
@@ -97,21 +87,17 @@
     position: absolute;
     right: -75px;
     top: 26px;
-    z-index: 5;
+
 }
 .social-buttons a img {
     position: relative;
     margin: 8px;
     width: 48px; 
-    padding: 3px;
-    border: 2px solid var(--purple-darkest);
     border-radius: 25px
 }
 .social-buttons a {
-    z-index: 0 !important ;
     cursor: pointer;
-    transition: filter 0.15s,
-    transform 0.15s;
+    transition: all 150ms
 }
 .social-buttons a:hover {
     filter: brightness(7)
