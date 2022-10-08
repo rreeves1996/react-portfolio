@@ -7,7 +7,7 @@ function About() {
     return (
         <>
             <div className="about-title">
-                <div className="about-user-icon-container">
+                <div className="about-icon-container">
                     <div className="about-user-icon">
                         <div className="about-user-head"></div>
                         <div className="about-user-body"></div>

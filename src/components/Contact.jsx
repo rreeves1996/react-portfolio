@@ -11,7 +11,7 @@ export default function Contact({ handlePageChange }) {
     return (
         <>
             <div className="contact-title">
-                <div className="contact-mail-icon-container">
+                <div className="contact-icon-container">
                     <div className="mail-icon-top"></div>
                     <div className="mail-icon-bottom"></div>
                 </div>

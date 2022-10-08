@@ -25,7 +25,7 @@
     width: calc(100% - 30.5vw);
     border-top-right-radius: 5px;
 }
-.about-user-icon-container {
+.about-icon-container {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -257,7 +257,7 @@
         bottom: 28px;
         left: 81px;
     }
-    .about-user-icon-container {
+    .about-icon-container {
         width: 225px;
         height: 225px;
 
@@ -304,7 +304,7 @@
         width: 150%;
         top: calc(-145px - 1vw);
     }
-    .about-title::after {
+    .about-title::after, .about-title h1::before, .about-icon-container {
         display: none;
     }
     .about-title h1 {
@@ -314,12 +314,6 @@
         justify-content: center;
         border-top-right-radius: 0;
         font-size: 8em;
-    }
-    .about-title h1::before {
-        display: none;
-    }
-    .about-user-icon-container {
-        display: none;
     }
     .about-container {
         width: 100%;

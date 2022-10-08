@@ -374,7 +374,7 @@ export default function Portfolio({ currentTab, handleTabChange }) {
     return (
         <>
             <div className="portfolio-title">
-                <div className="portfolio-folder-icon-container">
+                <div className="portfolio-icon-container">
                     <img src={icon} alt='icon' className='portfolio-icon' />
                 </div>
                 <h1>Portfolio</h1>

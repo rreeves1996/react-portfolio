@@ -20,7 +20,7 @@
     width: calc(100% - 30.5vw);
     border-top-right-radius: 5px;
 }
-.portfolio-folder-icon-container {
+.portfolio-icon-container {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -487,7 +487,7 @@ button {
         bottom: 28px;
         left: 116px;
     }
-    .portfolio-folder-icon-container {
+    .portfolio-icon-container {
         width: 225px;
         height: 225px;
         left: -120px;
@@ -603,7 +603,7 @@ button {
         width: 150%;
         top: calc(-145px - 1vw);
     }
-    .portfolio-title::after {
+    .portfolio-title::after, .portfolio-title h1::before, .portfolio-icon-container, .slider-side code {
         display: none;
     }
     .portfolio-title h1 {
@@ -614,12 +614,6 @@ button {
         border-top-right-radius: 0;
         font-size: 9em;
     }
-    .portfolio-title h1::before {
-        display: none;
-    }
-    .portfolio-folder-icon-container {
-        display: none;
-    }
     .project-tabs h5 span {
         position: absolute;
         display: flex;
@@ -627,7 +621,6 @@ button {
         translate(-15px, 20px);
     }
     .project-tabs h5 {
-
         transform: translateY(65px);
         top: auto;
         right: auto;
@@ -636,10 +629,6 @@ button {
     .slider-side h1 {
         margin-bottom: -30px;
         margin-top: 40px;
-
-    }
-    .slider-side code {
-        display: none;
     }
     .slider {
         min-width: 400px;
