@@ -237,7 +237,6 @@ main {
 .navbar-brand h1 {
     position: relative;
     color: var(--blue);
-    /* text-shadow: 0px 0px 3px var(--purple-darkest); */
     font-weight: 100;
     font-size: 2.5em;
     padding: 0px 12px 5px 17px;
@@ -322,9 +321,9 @@ main {
     z-index: 2;
     transition: width 0.4s 0.1s;
 }
-#home:hover::before {
+#home:hover::before, #about:hover::before, #portfolio:hover::before, #contact:hover::before {
     width: 0px !important;
-    transition: width 0.001s;
+    transition: width 1ms;
 }
 #about::after {
     content: "";
@@ -355,10 +354,6 @@ main {
     z-index: 2;
     transition: width 0.4s 0.1s;
 }
-#about:hover::before {
-    width: 0px !important;
-    transition: width 0.001s;
-}
 #portfolio::after {
     content: "";
     filter: drop-shadow(0px 0px 2px var(--blue));
@@ -388,10 +383,6 @@ main {
     z-index: 2;
     transition: width 0.5s 0.1s;
 }
-#portfolio:hover::before {
-    width: 0px !important;
-    transition: width 0.001s;
-}
 #contact::after {
     content: "";
     filter: drop-shadow(0px 0px 2px var(--blue));
@@ -420,10 +411,6 @@ main {
     position: absolute;
     z-index: 2;
     transition: width 0.4s 0.1s;
-}
-#contact:hover::before {
-    width: 0px !important;
-    transition: width 0.001s;
 }
 
 .resume {
@@ -639,6 +626,7 @@ footer p {
         flex-wrap: wrap;
         width: 60%;
         margin: 15px auto;
+        max-height: 500px;
     }
     .background {
         width: 20%;
@@ -681,6 +669,7 @@ footer p {
         display: flex;
         width: 100%; height: 100%;
         min-height: 100%;
+        max-height: 100%;
         flex-direction: column;
         justify-content: flex-end;
         align-items: center;
