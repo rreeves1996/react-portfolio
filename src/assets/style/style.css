@@ -705,13 +705,15 @@ footer p {
     .navbar {
         position: fixed;
         z-index: 999;
-        backdrop-filter: blur(7px) !important;
+        background-color: var(--purple-darkest);
+        opacity: 75%;
         width: 100%;
         height: 85px;
         top: 0;
+        transition: all 0.1s;
     }
-    .navbar-bg {
-        display: flex;
+    .navbar:hover {
+        opacity: 100%;
     }
     .navbar-brand {
         height: 55px;
@@ -747,11 +749,9 @@ footer p {
     .navbar-brand::after {
         filter: none;
         position: absolute;
-        width: 15px;
-        height: 3px;
+        width: 15px;    height: 3px;
         background-color: var(--purple);
-        bottom: 0;
-        left: 150px;
+        bottom: 0;  left: 150px;
         border-radius: 0px;
         transition: background-color 0.5s;
     }
@@ -804,7 +804,6 @@ footer p {
         width: 260px;
         padding: 3px;
         display: flex;
-        /* justify-content: center; */
         align-items: center;
         border-bottom-left-radius: 8px;
         transition: transform 0.5s ease-in-out;
@@ -832,7 +831,6 @@ footer p {
     .nav-link {
 
         display: flex;
-        /* display: none; */
         align-items: center;
         justify-content: center;
         font-size: 2em;
@@ -888,32 +886,30 @@ footer p {
 }
 @media screen and (max-width: 768px) {
     .page-container {
-        width: 90%;
-        margin-bottom: 5px;
-    }
-    .background, .mobile-background {
-        width: 5%;
+        width: 100%;
+        margin-bottom: 0;
+        background-color: rgba(255, 255, 255, 0.116);
     }
     .background {
-        transform: translateX(-5px);
+        filter: blur(4px);
+        position: fixed;
+        width: 100%;
+        opacity: 50%;
+        bottom: -100px;
+    }
+    .background {
+        transform: none;
     }
     .mobile-background {
-        transform: translateX(5px);
+        display: none;
     }
     .background img {
         width: 1000px;
-
-    }
-    .mobile-background img {
-        width: 1400px;
     }
     .mountains {
-        bottom: 200px;
+        bottom: 0px;
     }
-    .city1-mobile {
-        width: 2000px !important;
-    }
-    .trees-mobile {
-        bottom: 100px !important;
+    #trees {
+        display: none;
     }
 }

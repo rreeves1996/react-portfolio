@@ -1,30 +1,16 @@
 import React from 'react';
-import { useEffect, useState } from 'react';
 import mountainsImage from "../assets/mountains.png";
 import treesImage from "../assets/trees.png";
 import city1Image from "../assets/city1.png";
 import city2Image from "../assets/city2.png";
 
-export default function Wrapper( props, { currentPage } ) {
-    // const [width, setWidth] = useState<1600>(window.innerWidth);
-
-    // function handleWindowSizeChange() {
-    //     setWidth(window.innerWidth);
-    // }
-
-    // useEffect(() => {
-    //     window.addEventListener('resize', handleWindowSizeChange);
-    //     return () => {
-    //         window.removeEventListener('resize', handleWindowSizeChange);
-    //     }
-    // }, []);
-
-    // const smallerLayout = width <= 1600;
+export default function Wrapper(props) {
     return (
         <div className='wrapper'>
             <div className="background">
+                <img src={treesImage} alt="trees" className="trees" id="trees-mobile" />
                 <img src={mountainsImage} alt="mountains" className="mountains" />
-                <img src={treesImage} alt="trees" className="trees" />
+                <img src={treesImage} alt="trees" className="trees" id="trees" />
                 <img src={city1Image} alt="city1" className="city1" />
                 <img src={city2Image} alt="city2" className="city2" />
             </div>
