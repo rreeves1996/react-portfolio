@@ -593,7 +593,30 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-
+    .portfolio-title {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: auto;
+        right: auto;
+        margin: 0;        
+        width: 150%;
+        top: calc(-145px - 1vw);
+    }
+    .portfolio-title::after {
+        display: none;
+    }
+    .portfolio-title h1 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        border-top-right-radius: 0;
+        font-size: 9em;
+    }
+    .portfolio-title h1::before {
+        display: none;
+    }
     .portfolio-folder-icon-container {
         display: none;
     }
@@ -623,30 +646,7 @@ button {
         width: 90%;
         transform: scale(0.8);
     }
-    .portfolio-title {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        left: auto;
-        right: auto;
-        margin: 0;        
-        width: 150%;
-        top: calc(-145px - 1vw);
-    }
-    .portfolio-title::after {
-        display: none;
-    }
-    .portfolio-title h1 {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        justify-content: center;
-        border-top-right-radius: 0;
-        font-size: 9em;
-    }
-    .portfolio-title h1::before {
-        display: none;
-    }
+
     .text-side {
         justify-content: center;
         min-width: 90%;

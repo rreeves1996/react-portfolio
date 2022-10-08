@@ -295,7 +295,31 @@
 }
 @media screen and (max-width: 1420px) {
     .about-title {
-        top: calc(-145px - .5vw);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: auto;
+        right: auto;
+        margin: 0;        
+        width: 150%;
+        top: calc(-145px - 1vw);
+    }
+    .about-title::after {
+        display: none;
+    }
+    .about-title h1 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        border-top-right-radius: 0;
+        font-size: 8em;
+    }
+    .about-title h1::before {
+        display: none;
+    }
+    .about-user-icon-container {
+        display: none;
     }
     .about-container {
         width: 100%;
