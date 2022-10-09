@@ -787,7 +787,7 @@ footer p {
         position: fixed;
         left: auto;
         transform: translateX(20px);
-        top: 83px;
+        top: 73px;
         background-color: var(--purple-darkest) !important;
         height: 355px;
         width: 260px;
@@ -831,6 +831,10 @@ footer p {
         cursor: pointer;
         background-color:#302d4e;
         z-index: 9999 !important;
+        transition: all 200ms;
+    }
+    .nav-link:hover {
+        filter: brightness(1.1);
     }
     #home::before {
         display: none;

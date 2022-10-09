@@ -532,7 +532,6 @@ textarea {
 
         top: auto;
         left: auto;
-        /* right: -7.5%; */
     }
     .contact-form-side h1 {
         display: none;
@@ -563,7 +562,7 @@ textarea {
         padding: 0;
         justify-content: center;
         border-top-right-radius: 0;
-        font-size: 9em;
+        font-size: 25vw;
     }
     .contact-socials-side {
         min-width: 90%;

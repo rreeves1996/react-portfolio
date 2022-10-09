@@ -242,25 +242,25 @@
     }
     .about-title::after {
         height: 80px;
-        width: calc(100% - 465px - .5vw);
+        width: calc(100% - 500px - .5vw);
 
     }
     .about-title h1 {
         padding-bottom: 15px;
         padding-right: 18px;
         font-size: 110px;
-        width: 465px;
+        width: 500px;
         height: 100%;
     }
     .about-title h1::before {
         width: 354px;
         bottom: 28px;
-        left: 81px;
+        left: 117px;
     }
     .about-icon-container {
         width: 225px;
         height: 225px;
-
+        left: -120px;
     }
     .about-user-icon {
         width: 145px;
@@ -294,27 +294,8 @@
 
 }
 @media screen and (max-width: 1420px) {
-    .about-title::after, .about-title h1::before, .about-icon-container {
-        display: none;
-    }
     .about-title {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        left: auto;
-        right: auto;
-        margin: 0;        
-        width: 150%;
-        top: calc(-145px - 1vw);
-    }
-
-    .about-title h1 {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0;
-        justify-content: center;
-        border-top-right-radius: 0;
-        font-size: 8em;
+        top: calc(-145px - .5vw);
     }
     .about-container {
         width: 100%;
@@ -333,5 +314,27 @@
         height: auto;
         margin: 1% 0px;
         font-size: 1.05em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .about-title::after, .about-title h1::before, .about-icon-container {
+        display: none;
+    }
+    .about-title {
+        justify-content: center;
+        left: auto;
+        right: auto;
+        margin: 0;        
+        width: 150%;
+        top: calc(-145px - 1vw);
+    }
+
+    .about-title h1 {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        justify-content: center;
+        border-top-right-radius: 0;
+        font-size: 25vw;
     }
 }
