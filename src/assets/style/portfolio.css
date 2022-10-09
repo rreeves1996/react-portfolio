@@ -70,22 +70,15 @@
     z-index: 5;
     background-image: url("/src/assets/tab-inactive-right.png");
 }
-.group-project-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    margin-top: -2vw;
-}
 .text-side {
-    display: flex;
+    position: absolute;
+    display: flex;  justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    position: absolute;
+    width: 40%;   height: 100%;
     left: 3vw;
-    top: 2vw;
-    font-size: 1.4vh;
-    width: 40%;
+    margin: 0;
+    font-size: .85em;
 }
 .text-side h6 {
     font-size: 1.3em;

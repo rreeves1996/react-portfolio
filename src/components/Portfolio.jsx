@@ -80,9 +80,12 @@ export default function Portfolio({ currentTab, handleTabChange }) {
                         feature, and it has an "Upcoming Events" section that displays upcoming pickleball-related
                         events on the homepage.
                     </p>
-                    <h6><strong>Project #3 - Placeholder:</strong></h6>
+                    <h6><strong>Project #3 - The RanDUMBizer:</strong></h6>
                     <p>
-                        New project coming soon!
+                        This was my final group project for my bootcamp. We were tasked to make a fully functioning app 
+                        with a polished UI, login feature and routes with Apollo and GraphQL. We created an app with a 
+                        simple concept that was centered around users creating/posting random lists (movies, games, food, etc).
+                        I created the UI/UX from scratch with my own custom CSS library here, and I'm fairly happy with the result!
                     </p>
                 </div>
                 <div className="slider-side">
