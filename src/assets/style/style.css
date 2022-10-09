@@ -424,7 +424,7 @@ main {
     position: absolute;
     display: flex;
     height: 100px;
-    right: 0;   bottom: -.5vw;
+    right: 2vw;   bottom: -.5vw;
     background-color: rgba(255, 255, 255, 0.075);
     border-top-right-radius: 5px;
 }
@@ -670,9 +670,32 @@ footer p {
     }
 }
 @media screen and (max-width: 1600px) {
+    .title-container {
+        width: 100%;    height: 145px;
+        bottom: calc(500px + .5vw);
+        left: 0;
+        z-index: 5;
+    }
+    .title-container::after {
+        height: 80px;
+        right: 0;
+    }
+    .title-text {
+        padding: 0 15px 18px;
+        font-size: 110px;
+        height: 100%;
+    }
+    .title-text::before {
+        bottom: 28px;
+        left: 116px;
+    }
+    .icon-container {
+        width: 225px;
+        height: 225px;
+        left: -120px;
+    }
     .wrapper {
         height: fit-content;
-
     }
     .page-container {
         flex-wrap: wrap;

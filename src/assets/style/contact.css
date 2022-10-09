@@ -2,7 +2,6 @@
     display: none;
 }
 .contact-title::after {
-    right: 2vw;
     width: calc(100% - 28vw);
 }
 .contact-title h1 {
@@ -324,35 +323,18 @@ textarea {
     color: var(--purple-darkest);
     font-weight: 900;
 }
+
 @media screen and (max-width: 1600px) {
-    .contact-title {
-        z-index: 5;
-        width: 100%;
-        height: 145px;
-        bottom: calc(500px + .5vw);
-    }
     .contact-title::after {
-        height: 80px;
-        width: calc(100% - 405px - 2.5vw);
+        width: calc(100% - 425px - .5vw);
 
     }
     .contact-title h1 {
-        padding-bottom: 15px;
-        padding-right: 20px;
-        font-size: 110px;
-        width: 405px;
-        height: 100%;
+        width: 425px;
     }
     .contact-title h1::before {
-        width: 280px;
-        bottom: 28px;
-        left: 95px;
-    }
-    
-    .contact-icon-container {
-        width: 225px;
-        height: 225px;
-        left: -150px;
+        width: 67%;
+        left: 120px;
     }
     .contact-body {
         display: flex;
