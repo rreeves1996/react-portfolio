@@ -32,13 +32,13 @@ Overall, this was one of my first applications where I felt like I started with 
 ## Roadmap
 
 - [ ] Create/organize components to improve app performance
-- [x] Reduce JSX clutter through cleaner component/state management
     - [x] Create recurring wrapper for background
     - [x] Refactor navbar to make it easily reusable
     - [ ] Make portfolio projects in to reuseable component
-    - [ ] Refactor carousel into component
+    - [x] Refactor carousel into component
+- [x] Reduce JSX clutter through cleaner component/state management
 - [ ] Reorganize file stucture (I'm looking at you, 50 yard long assets images)
-- [ ] Clean up and minimize CSS for easier refinement in future
+- [x] Clean up and minimize CSS for easier refinement in future
 - [ ] Make contact form functional (and a modal?)
 
 
