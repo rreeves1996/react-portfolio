@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Title from './subs/Title';
 import icon from "../assets/portfolio.png";
 import soloProject1 from "../assets/proj-images/ecommerce.png";
 import soloProject2 from "../assets/proj-images/emptracker.png";
@@ -373,11 +372,11 @@ export default function Portfolio({ currentTab, handleTabChange }) {
 
     return (
         <>
-            <div className="portfolio-title">
-                <div className="portfolio-icon-container">
+            <div className="portfolio-title title-container">
+                <div className="portfolio-icon-container icon-container">
                     <img src={icon} alt='icon' className='portfolio-icon' />
                 </div>
-                <h1>Portfolio</h1>
+                <h1 className='title-text'>Portfolio</h1>
             </div>
             {renderTab()}
         </>

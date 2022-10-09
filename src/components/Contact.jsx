@@ -1,5 +1,4 @@
 import React from 'react';
-import Title from './subs/Title'
 import homePortrait from "../assets/self.png";
 import linkedinIcon from "../assets/linkedin-icon.png";
 import githubIcon from "../assets/github-icon.png";
@@ -10,12 +9,12 @@ import '../assets/style/contact.css';
 export default function Contact({ handlePageChange }) {
     return (
         <>
-            <div className="contact-title">
-                <div className="contact-icon-container">
+            <div className="contact-title title-container">
+                <div className="contact-icon-container icon-container">
                     <div className="mail-icon-top"></div>
                     <div className="mail-icon-bottom"></div>
                 </div>
-                <h1>Contact</h1>
+                <h1 className='title-text'>Contact</h1>
             </div>
             <div className="contact-body">
                 <div className="contact-socials-side">

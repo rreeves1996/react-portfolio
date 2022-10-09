@@ -1,19 +1,18 @@
 import React from 'react';
-import Title from './subs/Title';
 import about1 from "../assets/unnamed.jpg";
 import '../assets/style/about.css';
 
 function About() {
     return (
         <>
-            <div className="about-title">
-                <div className="about-icon-container">
+            <div className="about-title title-container">
+                <div className="about-icon-container icon-container">
                     <div className="about-user-icon">
                         <div className="about-user-head"></div>
                         <div className="about-user-body"></div>
                     </div>
                 </div>
-                <h1>About Me</h1>
+                <h1 className='title-text'>About Me</h1>
             </div>
             <div className="est">est. 1996</div>
     
