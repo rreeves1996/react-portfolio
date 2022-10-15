@@ -1,9 +1,9 @@
 import React from 'react';
 import homePortrait from "../assets/self.png";
-import linkedinIcon from "../assets/linkedin-icon.png";
-import githubIcon from "../assets/github-icon.png";
-import instagramIcon from "../assets/instagram-icon.png";
-import mountainsImage from "../assets/mountains.png";
+import linkedinIcon from "../assets/icon-images/linkedin-icon.png";
+import githubIcon from "../assets/icon-images/github-icon.png";
+import instagramIcon from "../assets/icon-images/instagram-icon.png";
+import mountainsImage from "../assets/icon-images/mountains.png";
 import treesImage from "../assets/trees.png";
 import city1Image from "../assets/city1.png";
 import city2Image from "../assets/city2.png";
@@ -14,11 +14,11 @@ export default function Home({ handlePageChange }) {
     return (
         <div className="home-container">
             <div className="home-background">
-                    <img src={mountainsImage} alt="mountains" className="home-mountains" />
-                    <img src={treesImage} alt="trees" className="home-trees" />
-                    <img src={city1Image} alt="city1" className="home-city1" />
-                    <img src={city2Image} alt="city2" className="home-city2" />
-                </div>
+                <img src={mountainsImage} alt="mountains" className="home-mountains" />
+                <img src={treesImage} alt="trees" className="home-trees" />
+                <img src={city1Image} alt="city1" className="home-city1" />
+                <img src={city2Image} alt="city2" className="home-city2" />
+            </div>
             <div className="home-hub">
                 <div className="social">
                     <img src={homePortrait} alt="home" className="home-picture" />

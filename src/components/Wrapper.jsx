@@ -1,8 +1,8 @@
 import React from 'react';
-import mountainsImage from "../assets/mountains.png";
-import treesImage from "../assets/trees.png";
-import city1Image from "../assets/city1.png";
-import city2Image from "../assets/city2.png";
+import mountainsImage from "../assets/bg-images/mountains.png";
+import treesImage from "../assets/bg-images/trees.png";
+import city1Image from "../assets/bg-images/city1.png";
+import city2Image from "../assets/bg-images/city2.png";
 
 export default function Wrapper(props) {
     return (

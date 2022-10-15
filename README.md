@@ -31,10 +31,10 @@ Overall, this was one of my first applications where I felt like I started with 
 
 ## Roadmap
 
-- [ ] Create/organize components to improve app performance
+- [x] Create/organize components to improve app performance
     - [x] Create recurring wrapper for background
     - [x] Refactor navbar to make it easily reusable
-    - [ ] Make portfolio projects in to reuseable component
+    - [x] Make portfolio projects in to reuseable component
     - [x] Refactor carousel into component
 - [x] Reduce JSX clutter through cleaner component/state management
 - [ ] Reorganize file stucture (I'm looking at you, 50 yard long assets images)

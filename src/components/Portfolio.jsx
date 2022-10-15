@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Carousel from './subs/Carousel';
-import icon from "../assets/portfolio.png";
+import icon from "../assets/icon-images/portfolio.png";
 import '../assets/style/portfolio.css';
 
 export default function Portfolio({ currentTab, handleTabChange }) {

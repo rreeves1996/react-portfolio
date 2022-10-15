@@ -1,8 +1,8 @@
 import React from 'react';
 
-import stars1 from '../assets/stars1.png';
-import stars2 from '../assets/stars2.png';
-import stars3 from '../assets/stars3.png';
+import stars1 from '../assets/bg-images/stars1.png';
+import stars2 from '../assets/bg-images/stars2.png';
+import stars3 from '../assets/bg-images/stars3.png';
 
 export default function Stars() {
     

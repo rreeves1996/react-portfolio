@@ -1,8 +1,8 @@
 import React from 'react';
 import homePortrait from "../assets/self.png";
-import linkedinIcon from "../assets/linkedin-icon.png";
-import githubIcon from "../assets/github-icon.png";
-import instagramIcon from "../assets/instagram-icon.png";
+import linkedinIcon from "../assets/icon-images/linkedin-icon.png";
+import githubIcon from "../assets/icon-images/github-icon.png";
+import instagramIcon from "../assets/icon-images/instagram-icon.png";
 
 import '../assets/style/contact.css';
 
