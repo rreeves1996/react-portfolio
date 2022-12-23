@@ -4,9 +4,6 @@
 <h1 align="center">React.js Portfolio</h1>
 
   <p align="center">
-    <img src='./react_icon.png' alt='screenshot' width="100">
-    <br />
-    <br />
     Application created, designed, and published by Ryan Reeves
     <br />
     <a href="https://github.com/rreeves1996/react-portfolio/issues">Report Bug</a>
