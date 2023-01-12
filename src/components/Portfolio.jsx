@@ -61,8 +61,8 @@ export default function Portfolio({ currentTab, handleTabChange }) {
 						<strong>Weather Dashboard:</strong>
 					</h6>
 					<p>
-						This is a simple app that I created during bootcamp that generates a
-						dashboard based on the searched city. It then grabs information on
+						This is a simple app that I created during boot camp that generates
+						a dashboard based on the searched city. It then grabs information on
 						the city's weather using a third-party weather API. This was my
 						first time implementing third-party API calls/requests.
 					</p>
